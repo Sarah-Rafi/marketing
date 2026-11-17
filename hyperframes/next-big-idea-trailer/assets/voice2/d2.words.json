@@ -1,0 +1,56 @@
+[
+  {
+    "text": "one",
+    "start": 0.18,
+    "end": 0.22,
+    "id": "w0"
+  },
+  {
+    "text": "dashboard",
+    "start": 0.22,
+    "end": 0.88,
+    "id": "w1"
+  },
+  {
+    "text": "that",
+    "start": 0.88,
+    "end": 1.17,
+    "id": "w2"
+  },
+  {
+    "text": "keeps",
+    "start": 1.17,
+    "end": 1.49,
+    "id": "w3"
+  },
+  {
+    "text": "orders",
+    "start": 1.58,
+    "end": 2,
+    "id": "w4"
+  },
+  {
+    "text": "and",
+    "start": 2,
+    "end": 2.27,
+    "id": "w5"
+  },
+  {
+    "text": "inventory",
+    "start": 2.27,
+    "end": 3.08,
+    "id": "w6"
+  },
+  {
+    "text": "in",
+    "start": 3.08,
+    "end": 3.26,
+    "id": "w7"
+  },
+  {
+    "text": "sync.",
+    "start": 3.26,
+    "end": 3.56,
+    "id": "w8"
+  }
+]

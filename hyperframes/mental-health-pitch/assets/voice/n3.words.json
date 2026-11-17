@@ -1,0 +1,74 @@
+[
+  {
+    "text": "daily",
+    "start": 0.08,
+    "end": 0.43,
+    "id": "w0"
+  },
+  {
+    "text": "mood",
+    "start": 0.43,
+    "end": 0.77,
+    "id": "w1"
+  },
+  {
+    "text": "check-ins,",
+    "start": 0.77,
+    "end": 1.6,
+    "id": "w2"
+  },
+  {
+    "text": "and",
+    "start": 1.62,
+    "end": 1.75,
+    "id": "w3"
+  },
+  {
+    "text": "a",
+    "start": 1.75,
+    "end": 1.77,
+    "id": "w4"
+  },
+  {
+    "text": "journal",
+    "start": 1.82,
+    "end": 2.16,
+    "id": "w5"
+  },
+  {
+    "text": "that",
+    "start": 2.16,
+    "end": 2.33,
+    "id": "w6"
+  },
+  {
+    "text": "shows",
+    "start": 2.33,
+    "end": 2.56,
+    "id": "w7"
+  },
+  {
+    "text": "how",
+    "start": 2.56,
+    "end": 2.77,
+    "id": "w8"
+  },
+  {
+    "text": "they",
+    "start": 2.77,
+    "end": 3.05,
+    "id": "w9"
+  },
+  {
+    "text": "really",
+    "start": 3.05,
+    "end": 3.32,
+    "id": "w10"
+  },
+  {
+    "text": "feel.",
+    "start": 3.47,
+    "end": 3.76,
+    "id": "w11"
+  }
+]

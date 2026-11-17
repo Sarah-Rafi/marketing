@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Start",
+    "start": 0.05,
+    "end": 0.35,
+    "id": "w0"
+  },
+  {
+    "text": "here",
+    "start": 0.48,
+    "end": 0.81,
+    "id": "w1"
+  },
+  {
+    "text": "MapOne",
+    "start": 0.81,
+    "end": 1.35,
+    "id": "w2"
+  },
+  {
+    "text": "sellers",
+    "start": 1.35,
+    "end": 1.82,
+    "id": "w3"
+  },
+  {
+    "text": "week,",
+    "start": 2.36,
+    "end": 2.49,
+    "id": "w4"
+  },
+  {
+    "text": "then",
+    "start": 2.49,
+    "end": 2.77,
+    "id": "w5"
+  },
+  {
+    "text": "build",
+    "start": 2.77,
+    "end": 3,
+    "id": "w6"
+  },
+  {
+    "text": "for",
+    "start": 3.11,
+    "end": 3.32,
+    "id": "w7"
+  },
+  {
+    "text": "the",
+    "start": 3.32,
+    "end": 3.53,
+    "id": "w8"
+  },
+  {
+    "text": "web.",
+    "start": 3.53,
+    "end": 3.83,
+    "id": "w9"
+  }
+]

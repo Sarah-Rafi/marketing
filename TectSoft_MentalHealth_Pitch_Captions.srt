@@ -1,0 +1,103 @@
+1
+00:00:03,640 --> 00:00:05,100
+Friend 1: Honestly? I’m exhausted.
+
+2
+00:00:05,100 --> 00:00:06,550
+Work, bills, family…
+
+3
+00:00:06,600 --> 00:00:09,450
+I can’t remember the last time I felt okay.
+
+4
+00:00:09,770 --> 00:00:12,500
+Friend 2: Same. Everyone says, go see a therapist.
+
+5
+00:00:12,500 --> 00:00:15,050
+When? I barely have time to sleep.
+
+6
+00:00:15,350 --> 00:00:17,750
+Friend 1: I wouldn’t even know where to start.
+
+7
+00:00:17,980 --> 00:00:20,900
+Friend 2: I just wish there was something on my phone.
+
+8
+00:00:20,950 --> 00:00:22,850
+Something that checks in on me,
+
+9
+00:00:22,850 --> 00:00:24,900
+and helps me find the right therapist
+
+10
+00:00:24,900 --> 00:00:25,750
+when I’m ready.
+
+11
+00:00:25,990 --> 00:00:28,550
+Friend 1: And I bet we’re not the only ones.
+
+12
+00:00:29,060 --> 00:00:30,100
+They’re not.
+
+13
+00:00:32,260 --> 00:00:33,900
+A mental health app can meet people
+
+14
+00:00:33,900 --> 00:00:35,150
+right where they are.
+
+15
+00:00:35,580 --> 00:00:37,100
+Daily mood check-ins,
+
+16
+00:00:37,100 --> 00:00:39,450
+and a journal that shows how they really feel.
+
+17
+00:00:40,240 --> 00:00:42,250
+Guided breathing and calming AI audio
+
+18
+00:00:42,250 --> 00:00:43,700
+for the hard nights.
+
+19
+00:00:44,240 --> 00:00:45,300
+And when they’re ready,
+
+20
+00:00:45,300 --> 00:00:47,750
+a real therapist, just a few taps away.
+
+21
+00:00:48,240 --> 00:00:49,500
+Plus a caring community,
+
+22
+00:00:49,500 --> 00:00:51,750
+so no one has to struggle alone.
+
+23
+00:00:52,280 --> 00:00:54,350
+Have an idea for a mental health app?
+
+24
+00:00:54,380 --> 00:00:55,980
+Reach out to us.
+
+25
+00:00:56,050 --> 00:00:57,250
+Let’s create it together,
+
+26
+00:00:57,250 --> 00:00:59,500
+and make this world a better place for everyone.

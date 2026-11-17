@@ -1,0 +1,152 @@
+[
+  {
+    "text": "have",
+    "start": 0.08,
+    "end": 0.27,
+    "id": "w0"
+  },
+  {
+    "text": "an",
+    "start": 0.27,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "idea",
+    "start": 0.4,
+    "end": 0.67,
+    "id": "w2"
+  },
+  {
+    "text": "for",
+    "start": 0.67,
+    "end": 0.87,
+    "id": "w3"
+  },
+  {
+    "text": "a",
+    "start": 0.87,
+    "end": 0.93,
+    "id": "w4"
+  },
+  {
+    "text": "mental",
+    "start": 0.93,
+    "end": 1.29,
+    "id": "w5"
+  },
+  {
+    "text": "health",
+    "start": 1.29,
+    "end": 1.74,
+    "id": "w6"
+  },
+  {
+    "text": "app,",
+    "start": 1.84,
+    "end": 2.2,
+    "id": "w7"
+  },
+  {
+    "text": "reach",
+    "start": 2.21,
+    "end": 2.84,
+    "id": "w8"
+  },
+  {
+    "text": "out",
+    "start": 2.84,
+    "end": 3.12,
+    "id": "w9"
+  },
+  {
+    "text": "to",
+    "start": 3.12,
+    "end": 3.74,
+    "id": "w10"
+  },
+  {
+    "text": "us.",
+    "start": 3.74,
+    "end": 3.89,
+    "id": "w11"
+  },
+  {
+    "text": "Let's",
+    "start": 3.89,
+    "end": 4.12,
+    "id": "w12"
+  },
+  {
+    "text": "create",
+    "start": 4.14,
+    "end": 4.45,
+    "id": "w13"
+  },
+  {
+    "text": "it",
+    "start": 4.45,
+    "end": 4.55,
+    "id": "w14"
+  },
+  {
+    "text": "together",
+    "start": 4.55,
+    "end": 4.95,
+    "id": "w15"
+  },
+  {
+    "text": "and",
+    "start": 5.03,
+    "end": 5.12,
+    "id": "w16"
+  },
+  {
+    "text": "make",
+    "start": 5.12,
+    "end": 5.26,
+    "id": "w17"
+  },
+  {
+    "text": "this",
+    "start": 5.34,
+    "end": 5.47,
+    "id": "w18"
+  },
+  {
+    "text": "world",
+    "start": 5.47,
+    "end": 5.68,
+    "id": "w19"
+  },
+  {
+    "text": "a",
+    "start": 5.73,
+    "end": 5.78,
+    "id": "w20"
+  },
+  {
+    "text": "better",
+    "start": 5.78,
+    "end": 6.1,
+    "id": "w21"
+  },
+  {
+    "text": "place",
+    "start": 6.1,
+    "end": 6.36,
+    "id": "w22"
+  },
+  {
+    "text": "for",
+    "start": 6.36,
+    "end": 6.52,
+    "id": "w23"
+  },
+  {
+    "text": "everyone.",
+    "start": 6.52,
+    "end": 7,
+    "id": "w24"
+  }
+]

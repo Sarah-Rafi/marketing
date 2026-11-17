@@ -1,0 +1,80 @@
+[
+  {
+    "text": "Look",
+    "start": 0.09,
+    "end": 0.28,
+    "id": "w0"
+  },
+  {
+    "text": "at",
+    "start": 0.3,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "what",
+    "start": 0.44,
+    "end": 0.75,
+    "id": "w2"
+  },
+  {
+    "text": "people",
+    "start": 0.75,
+    "end": 1.2,
+    "id": "w3"
+  },
+  {
+    "text": "are",
+    "start": 1.24,
+    "end": 1.41,
+    "id": "w4"
+  },
+  {
+    "text": "building",
+    "start": 1.42,
+    "end": 2.02,
+    "id": "w5"
+  },
+  {
+    "text": "right",
+    "start": 2.02,
+    "end": 2.28,
+    "id": "w6"
+  },
+  {
+    "text": "now,",
+    "start": 2.59,
+    "end": 2.68,
+    "id": "w7"
+  },
+  {
+    "text": "and",
+    "start": 2.76,
+    "end": 2.85,
+    "id": "w8"
+  },
+  {
+    "text": "where",
+    "start": 2.85,
+    "end": 3.14,
+    "id": "w9"
+  },
+  {
+    "text": "each",
+    "start": 3.14,
+    "end": 3.37,
+    "id": "w10"
+  },
+  {
+    "text": "one",
+    "start": 3.37,
+    "end": 3.54,
+    "id": "w11"
+  },
+  {
+    "text": "starts.",
+    "start": 3.54,
+    "end": 4.1,
+    "id": "w12"
+  }
+]

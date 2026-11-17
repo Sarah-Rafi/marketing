@@ -1,0 +1,91 @@
+1
+00:00:03,660 --> 00:00:06,250
+Therapist 1: My clients do real work in our sessions.
+
+2
+00:00:06,250 --> 00:00:09,100
+It’s the six days in between that worry me.
+
+3
+00:00:09,470 --> 00:00:11,600
+Therapist 2: Same. One client told me
+
+4
+00:00:11,600 --> 00:00:13,500
+that at 2 a.m. last night,
+
+5
+00:00:13,500 --> 00:00:15,400
+they asked a chatbot for help.
+
+6
+00:00:15,640 --> 00:00:18,450
+Therapist 1: A chatbot that’s never even met them.
+
+7
+00:00:18,780 --> 00:00:20,300
+Therapist 2: I wish I could be there…
+
+8
+00:00:20,300 --> 00:00:21,650
+without being there.
+
+9
+00:00:22,240 --> 00:00:23,500
+You can.
+
+10
+00:00:25,140 --> 00:00:27,300
+We turn your methods into your own app.
+
+11
+00:00:27,640 --> 00:00:28,700
+Guided breathing,
+
+12
+00:00:28,700 --> 00:00:30,200
+journaling prompts in your words,
+
+13
+00:00:30,200 --> 00:00:31,950
+and calming audio sessions,
+
+14
+00:00:31,950 --> 00:00:33,950
+made with AI from your approach.
+
+15
+00:00:34,370 --> 00:00:36,050
+Gentle daily check-ins,
+
+16
+00:00:36,050 --> 00:00:37,250
+so you start every session
+
+17
+00:00:37,250 --> 00:00:39,250
+already knowing how their week went.
+
+18
+00:00:39,680 --> 00:00:40,800
+For therapists, counsellors,
+
+19
+00:00:40,800 --> 00:00:43,250
+psychologists and wellness coaches.
+
+20
+00:00:43,630 --> 00:00:45,350
+Not a replacement for you.
+
+21
+00:00:45,350 --> 00:00:47,700
+Just you, a little closer, between sessions.
+
+22
+00:00:48,460 --> 00:00:49,800
+Let’s build it together.
+
+23
+00:00:49,870 --> 00:00:50,600
+Let’s talk.

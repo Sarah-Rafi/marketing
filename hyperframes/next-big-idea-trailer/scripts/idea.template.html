@@ -1,0 +1,175 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Caveat";
+      src: url("assets/fonts/Caveat.ttf");
+      font-weight: 400 700;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: radial-gradient(ellipse 70% 80% at 22% 18%, #33281f 0%, #18130f 55%, #0c0a08 100%);
+    }
+    #{{P}}-stage {
+      position: absolute;
+      inset: 0;
+    }
+    #{{P}}-col {
+      position: absolute;
+      left: 140px;
+      top: 130px;
+      width: 790px;
+    }
+    #{{P}}-title {
+      font-family: "League Gothic", sans-serif;
+      font-size: 104px;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      color: #eae2cf;
+      overflow: hidden;
+      padding-bottom: 6px;
+    }
+    .{{P}}-mask {
+      overflow: hidden;
+    }
+    .{{P}}-label {
+      margin-top: 34px;
+      font-family: "Caveat", cursive;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 1.1;
+      color: #c9bfa9;
+    }
+    .{{P}}-body {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 1.3;
+      color: #eae2cf;
+      letter-spacing: -0.01em;
+    }
+    .{{P}}-pen {
+      font-family: "Caveat", cursive;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 1.1;
+      color: #e0483b;
+      white-space: nowrap;
+    }
+    #{{P}}-start {
+      margin-top: 30px;
+    }
+    #{{P}}-art {
+      position: absolute;
+      left: 1040px;
+      top: 170px;
+      width: 700px;
+      height: 700px;
+      overflow: visible;
+    }
+    #{{P}}-art .s {
+      fill: none;
+      stroke: #eae2cf;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #{{P}}-art .f {
+      fill: rgba(234, 226, 207, 0.06);
+    }
+    #{{P}}-art .bub {
+      fill: #3a352f;
+    }
+    #{{P}}-art .slot {
+      fill: rgba(234, 226, 207, 0.12);
+    }
+    #{{P}}-art .grid path {
+      stroke: rgba(234, 226, 207, 0.35);
+      stroke-width: 2;
+      fill: none;
+    }
+    #{{P}}-art .ck {
+      fill: none;
+      stroke: #f2b35a;
+      stroke-width: 5;
+      stroke-linecap: round;
+    }
+    #{{P}}-art text {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+    }
+    #{{P}}-art .t {
+      font-size: 30px;
+      fill: #eae2cf;
+    }
+    #{{P}}-art .tm {
+      font-size: 28px;
+      fill: #c9bfa9;
+    }
+    #{{P}}-art .tm text {
+      font-size: 28px;
+      fill: #c9bfa9;
+    }
+    #{{P}}-art .td {
+      font-size: 30px;
+      fill: #22201c;
+    }
+    #{{P}}-art .tr {
+      font-size: 30px;
+      fill: #f0675b;
+    }
+    #{{P}}-art .ta {
+      font-size: 30px;
+      fill: #f2b35a;
+    }
+    #{{P}}-art .tb {
+      font-size: 30px;
+      font-weight: 700;
+      fill: #fff;
+    }
+  </style>
+  <div id="root" data-composition-id="{{ID}}" data-width="1920" data-height="1080">
+    <div id="{{P}}-stage">
+      <div id="{{P}}-col">
+        <div id="{{P}}-title"><div id="{{P}}-title-in">{{TITLE}}</div></div>
+        <div id="{{P}}-r1" class="{{P}}-mask">
+          <div id="{{P}}-r1-in"><div class="{{P}}-label">The problem</div><div class="{{P}}-body">{{PROBLEM}}</div></div>
+        </div>
+        <div id="{{P}}-r2" class="{{P}}-mask">
+          <div id="{{P}}-r2-in"><div class="{{P}}-label">The fix</div><div class="{{P}}-body">{{FIX}}</div></div>
+        </div>
+        <div id="{{P}}-start">
+          <div id="{{P}}-s0" class="{{P}}-pen">Start here →</div>
+          <div id="{{P}}-s1" class="{{P}}-pen">{{START1}}</div>
+          <div id="{{P}}-s2" class="{{P}}-pen">{{START2}}</div>
+        </div>
+      </div>
+      <svg id="{{P}}-art" viewBox="0 0 700 700">{{ART}}</svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const P = "#{{P}}";
+    // Enter from the right (each idea turns over like the next page), exit to the left.
+    tl.fromTo(P + "-stage", { x: 160, opacity: 0, filter: "blur(8px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+    tl.fromTo(P + "-title-in", { yPercent: 105 }, { yPercent: 0, duration: 0.55, ease: "power4.out" }, 0.15);
+    tl.fromTo(P + "-art", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+    // The problem lands with the voice; the illustration shows it.
+    tl.fromTo(P + "-r1-in", { yPercent: 102 }, { yPercent: 0, duration: 0.5, ease: "power4.out" }, {{T1}});
+    // Problem pieces arrive one by one across the problem line.
+    const probKids = document.querySelectorAll(P + "-q > *, " + P + "-prob > *");
+    tl.fromTo(probKids, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out", stagger: Math.min(0.9, ({{D1}} - 0.8) / probKids.length) }, {{T1}} + 0.3);
+    // The fix: problem state clears, fixed state performs.
+    tl.fromTo(P + "-r2-in", { yPercent: 102 }, { yPercent: 0, duration: 0.5, ease: "power4.out" }, {{T2}});
+    tl.fromTo(P + "-prob", { opacity: 1, scale: 1, transformOrigin: "50% 50%" }, { opacity: 0, scale: 0.94, duration: 0.35, ease: "power2.in" }, {{T2}} + 0.2);
+    const fixKids = document.querySelectorAll(P + "-fix > *");
+    tl.fromTo(fixKids, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out", stagger: Math.min(0.9, ({{D2}} - 0.6) / fixKids.length) }, {{T2}} + 0.45);
+    // "Start here" is written in red pen as it is said.
+    tl.fromTo(P + "-s0", { clipPath: "inset(-20px 100% -20px -10px)" }, { clipPath: "inset(-20px -10px -20px -10px)", duration: 0.45, ease: "none" }, {{T3}});
+    tl.fromTo(P + "-s1", { clipPath: "inset(-20px 100% -20px -10px)" }, { clipPath: "inset(-20px -10px -20px -10px)", duration: 0.85, ease: "none" }, {{TL1}});
+    tl.fromTo(P + "-s2", { clipPath: "inset(-20px 100% -20px -10px)" }, { clipPath: "inset(-20px -10px -20px -10px)", duration: 0.7, ease: "none" }, {{TL2}});
+    tl.to(P + "-stage", { x: -160, opacity: 0, filter: "blur(8px)", duration: 0.35, ease: "power3.in" }, {{TOUT}});
+    window.__timelines["{{ID}}"] = tl;
+  </script>
+</template>

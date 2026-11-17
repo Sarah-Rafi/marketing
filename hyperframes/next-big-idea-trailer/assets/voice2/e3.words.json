@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Start",
+    "start": 0.06,
+    "end": 0.36,
+    "id": "w0"
+  },
+  {
+    "text": "here,",
+    "start": 0.46,
+    "end": 0.92,
+    "id": "w1"
+  },
+  {
+    "text": "a",
+    "start": 0.98,
+    "end": 1.01,
+    "id": "w2"
+  },
+  {
+    "text": "clickable",
+    "start": 1.05,
+    "end": 1.79,
+    "id": "w3"
+  },
+  {
+    "text": "prototype,",
+    "start": 1.79,
+    "end": 2.6,
+    "id": "w4"
+  },
+  {
+    "text": "tested",
+    "start": 2.66,
+    "end": 2.96,
+    "id": "w5"
+  },
+  {
+    "text": "with",
+    "start": 3.06,
+    "end": 3.31,
+    "id": "w6"
+  },
+  {
+    "text": "20",
+    "start": 3.33,
+    "end": 3.77,
+    "id": "w7"
+  },
+  {
+    "text": "real",
+    "start": 3.77,
+    "end": 3.99,
+    "id": "w8"
+  },
+  {
+    "text": "people.",
+    "start": 4.06,
+    "end": 4.72,
+    "id": "w9"
+  }
+]

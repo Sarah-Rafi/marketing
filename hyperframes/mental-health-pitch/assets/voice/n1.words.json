@@ -1,0 +1,20 @@
+[
+  {
+    "text": "They",
+    "start": 0.06,
+    "end": 0.39,
+    "id": "w0"
+  },
+  {
+    "text": "are",
+    "start": 0.39,
+    "end": 0.6,
+    "id": "w1"
+  },
+  {
+    "text": "not.",
+    "start": 0.7,
+    "end": 1.02,
+    "id": "w2"
+  }
+]

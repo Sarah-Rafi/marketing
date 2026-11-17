@@ -1,0 +1,26 @@
+[
+  {
+    "text": "A",
+    "start": 0.06,
+    "end": 0.11,
+    "id": "w0"
+  },
+  {
+    "text": "problem",
+    "start": 0.11,
+    "end": 0.54,
+    "id": "w1"
+  },
+  {
+    "text": "worth",
+    "start": 0.54,
+    "end": 0.88,
+    "id": "w2"
+  },
+  {
+    "text": "solving.",
+    "start": 0.88,
+    "end": 1.53,
+    "id": "w3"
+  }
+]

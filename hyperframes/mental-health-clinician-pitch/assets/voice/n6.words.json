@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Even",
+    "start": 0.02,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "people",
+    "start": 0.24,
+    "end": 0.6,
+    "id": "w1"
+  },
+  {
+    "text": "on",
+    "start": 0.6,
+    "end": 0.72,
+    "id": "w2"
+  },
+  {
+    "text": "your",
+    "start": 0.72,
+    "end": 0.96,
+    "id": "w3"
+  },
+  {
+    "text": "waitlist",
+    "start": 0.96,
+    "end": 1.44,
+    "id": "w4"
+  },
+  {
+    "text": "get",
+    "start": 1.44,
+    "end": 1.62,
+    "id": "w5"
+  },
+  {
+    "text": "support",
+    "start": 1.62,
+    "end": 2.04,
+    "id": "w6"
+  },
+  {
+    "text": "while",
+    "start": 2.04,
+    "end": 2.34,
+    "id": "w7"
+  },
+  {
+    "text": "they",
+    "start": 2.34,
+    "end": 2.58,
+    "id": "w8"
+  },
+  {
+    "text": "wait.",
+    "start": 2.58,
+    "end": 2.88,
+    "id": "w9"
+  }
+]

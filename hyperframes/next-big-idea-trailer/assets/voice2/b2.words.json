@@ -1,0 +1,62 @@
+[
+  {
+    "text": "online",
+    "start": 0.07,
+    "end": 0.52,
+    "id": "w0"
+  },
+  {
+    "text": "booking",
+    "start": 0.52,
+    "end": 1.09,
+    "id": "w1"
+  },
+  {
+    "text": "with",
+    "start": 1.2,
+    "end": 1.48,
+    "id": "w2"
+  },
+  {
+    "text": "deposits,",
+    "start": 1.48,
+    "end": 2.33,
+    "id": "w3"
+  },
+  {
+    "text": "and",
+    "start": 2.33,
+    "end": 2.53,
+    "id": "w4"
+  },
+  {
+    "text": "text",
+    "start": 2.53,
+    "end": 2.71,
+    "id": "w5"
+  },
+  {
+    "text": "reminders",
+    "start": 2.79,
+    "end": 3.37,
+    "id": "w6"
+  },
+  {
+    "text": "closes",
+    "start": 3.44,
+    "end": 3.86,
+    "id": "w7"
+  },
+  {
+    "text": "the",
+    "start": 3.93,
+    "end": 4.07,
+    "id": "w8"
+  },
+  {
+    "text": "gap.",
+    "start": 4.07,
+    "end": 4.5,
+    "id": "w9"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Online",
+    "start": 0.12,
+    "end": 0.45,
+    "id": "w0"
+  },
+  {
+    "text": "sellers",
+    "start": 0.45,
+    "end": 0.98,
+    "id": "w1"
+  },
+  {
+    "text": "juggle",
+    "start": 0.98,
+    "end": 1.43,
+    "id": "w2"
+  },
+  {
+    "text": "stock",
+    "start": 1.43,
+    "end": 1.8,
+    "id": "w3"
+  },
+  {
+    "text": "across",
+    "start": 1.8,
+    "end": 2.26,
+    "id": "w4"
+  },
+  {
+    "text": "every",
+    "start": 2.26,
+    "end": 2.63,
+    "id": "w5"
+  },
+  {
+    "text": "channel",
+    "start": 2.63,
+    "end": 2.95,
+    "id": "w6"
+  },
+  {
+    "text": "in",
+    "start": 2.95,
+    "end": 3.37,
+    "id": "w7"
+  },
+  {
+    "text": "spreadsheets.",
+    "start": 3.37,
+    "end": 4.28,
+    "id": "w8"
+  }
+]

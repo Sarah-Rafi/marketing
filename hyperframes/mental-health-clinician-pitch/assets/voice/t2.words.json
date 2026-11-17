@@ -1,0 +1,50 @@
+[
+  {
+    "text": "the",
+    "start": 0.06,
+    "end": 0.38,
+    "id": "w0"
+  },
+  {
+    "text": "other",
+    "start": 0.38,
+    "end": 1.01,
+    "id": "w1"
+  },
+  {
+    "text": "167",
+    "start": 1.01,
+    "end": 2.15,
+    "id": "w2"
+  },
+  {
+    "text": "hours.",
+    "start": 2.15,
+    "end": 2.86,
+    "id": "w3"
+  },
+  {
+    "text": "I'm",
+    "start": 2.92,
+    "end": 3.1,
+    "id": "w4"
+  },
+  {
+    "text": "in",
+    "start": 3.1,
+    "end": 3.26,
+    "id": "w5"
+  },
+  {
+    "text": "the",
+    "start": 3.26,
+    "end": 3.5,
+    "id": "w6"
+  },
+  {
+    "text": "dark.",
+    "start": 3.5,
+    "end": 4.08,
+    "id": "w7"
+  }
+]

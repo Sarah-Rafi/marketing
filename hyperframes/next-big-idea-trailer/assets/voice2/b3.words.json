@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Start",
+    "start": 0.07,
+    "end": 0.37,
+    "id": "w0"
+  },
+  {
+    "text": "here",
+    "start": 0.5,
+    "end": 0.68,
+    "id": "w1"
+  },
+  {
+    "text": "a",
+    "start": 0.69,
+    "end": 0.76,
+    "id": "w2"
+  },
+  {
+    "text": "mobile-friendly",
+    "start": 0.76,
+    "end": 1.91,
+    "id": "w3"
+  },
+  {
+    "text": "booking",
+    "start": 1.91,
+    "end": 2.43,
+    "id": "w4"
+  },
+  {
+    "text": "page,",
+    "start": 2.8,
+    "end": 2.94,
+    "id": "w5"
+  },
+  {
+    "text": "not",
+    "start": 2.94,
+    "end": 3.16,
+    "id": "w6"
+  },
+  {
+    "text": "an",
+    "start": 3.16,
+    "end": 3.3,
+    "id": "w7"
+  },
+  {
+    "text": "app",
+    "start": 3.3,
+    "end": 3.52,
+    "id": "w8"
+  },
+  {
+    "text": "yet.",
+    "start": 3.52,
+    "end": 3.88,
+    "id": "w9"
+  }
+]

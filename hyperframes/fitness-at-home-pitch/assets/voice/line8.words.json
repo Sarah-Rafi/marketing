@@ -1,0 +1,38 @@
+[
+  {
+    "text": "Let's",
+    "start": 0.04,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "take",
+    "start": 0.28,
+    "end": 0.51,
+    "id": "w1"
+  },
+  {
+    "text": "your",
+    "start": 0.51,
+    "end": 0.72,
+    "id": "w2"
+  },
+  {
+    "text": "fitness",
+    "start": 0.83,
+    "end": 1.07,
+    "id": "w3"
+  },
+  {
+    "text": "business",
+    "start": 1.15,
+    "end": 1.62,
+    "id": "w4"
+  },
+  {
+    "text": "online.",
+    "start": 1.62,
+    "end": 2,
+    "id": "w5"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "text": "a",
+    "start": 0.09,
+    "end": 0.1,
+    "id": "w0"
+  },
+  {
+    "text": "crew",
+    "start": 0.1,
+    "end": 0.45,
+    "id": "w1"
+  },
+  {
+    "text": "app",
+    "start": 0.45,
+    "end": 0.67,
+    "id": "w2"
+  },
+  {
+    "text": "with",
+    "start": 0.76,
+    "end": 1.08,
+    "id": "w3"
+  },
+  {
+    "text": "offline",
+    "start": 1.08,
+    "end": 1.71,
+    "id": "w4"
+  },
+  {
+    "text": "job",
+    "start": 1.71,
+    "end": 1.98,
+    "id": "w5"
+  },
+  {
+    "text": "sheets,",
+    "start": 1.98,
+    "end": 2.73,
+    "id": "w6"
+  },
+  {
+    "text": "photo",
+    "start": 2.78,
+    "end": 3.12,
+    "id": "w7"
+  },
+  {
+    "text": "proof",
+    "start": 3.2,
+    "end": 3.43,
+    "id": "w8"
+  },
+  {
+    "text": "and",
+    "start": 3.64,
+    "end": 3.74,
+    "id": "w9"
+  },
+  {
+    "text": "instant",
+    "start": 3.83,
+    "end": 4.34,
+    "id": "w10"
+  },
+  {
+    "text": "invoices.",
+    "start": 4.34,
+    "end": 5,
+    "id": "w11"
+  }
+]

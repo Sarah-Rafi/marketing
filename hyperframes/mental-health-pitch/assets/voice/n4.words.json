@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Guided",
+    "start": 0.04,
+    "end": 0.33,
+    "id": "w0"
+  },
+  {
+    "text": "breathing",
+    "start": 0.46,
+    "end": 0.98,
+    "id": "w1"
+  },
+  {
+    "text": "and",
+    "start": 0.98,
+    "end": 1.17,
+    "id": "w2"
+  },
+  {
+    "text": "calming",
+    "start": 1.17,
+    "end": 1.63,
+    "id": "w3"
+  },
+  {
+    "text": "AI",
+    "start": 1.63,
+    "end": 1.76,
+    "id": "w4"
+  },
+  {
+    "text": "audio",
+    "start": 1.76,
+    "end": 2.07,
+    "id": "w5"
+  },
+  {
+    "text": "for",
+    "start": 2.1,
+    "end": 2.28,
+    "id": "w6"
+  },
+  {
+    "text": "the",
+    "start": 2.28,
+    "end": 2.47,
+    "id": "w7"
+  },
+  {
+    "text": "hard",
+    "start": 2.47,
+    "end": 2.73,
+    "id": "w8"
+  },
+  {
+    "text": "nights.",
+    "start": 2.73,
+    "end": 3.34,
+    "id": "w9"
+  }
+]

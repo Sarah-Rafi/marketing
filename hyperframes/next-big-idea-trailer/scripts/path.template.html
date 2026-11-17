@@ -1,0 +1,87 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background:
+        repeating-linear-gradient(0deg, rgba(234, 226, 207, 0.05) 0 1px, transparent 1px 60px),
+        repeating-linear-gradient(90deg, rgba(234, 226, 207, 0.05) 0 1px, transparent 1px 60px),
+        radial-gradient(ellipse 70% 70% at 40% 35%, #23252a 0%, #141518 70%, #0c0c0e 100%);
+    }
+    #pa-cam {
+      position: absolute;
+      inset: 0;
+      transform-origin: 960px 520px;
+    }
+    #pa-head {
+      position: absolute;
+      left: 140px;
+      top: 118px;
+      font-family: "League Gothic", sans-serif;
+      font-size: 112px;
+      line-height: 1;
+      color: #eae2cf;
+      overflow: hidden;
+    }
+    .pa-row {
+      position: absolute;
+      left: 0;
+      width: 1920px;
+      height: 100px;
+    }
+    .pa-q {
+      position: absolute;
+      left: 140px;
+      width: 720px;
+      top: 26px;
+      text-align: right;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      color: #eae2cf;
+    }
+    .pa-arrow {
+      position: absolute;
+      left: 890px;
+      top: 20px;
+      width: 150px;
+      height: 60px;
+      overflow: visible;
+    }
+    .pa-a {
+      position: absolute;
+      left: 1070px;
+      top: 4px;
+      font-family: "League Gothic", sans-serif;
+      font-size: 92px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      color: #f2b35a;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  </style>
+  <div id="root" data-composition-id="path" data-width="1920" data-height="1080">
+    <div id="pa-cam">
+      <div id="pa-head"><div id="pa-head-in">Where do you start?</div></div>
+{{ROWS}}
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#pa-cam", { opacity: 0, scale: 1.08 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power3.out" }, 0);
+    tl.fromTo("#pa-head-in", { yPercent: 105 }, { yPercent: 0, duration: 0.55, ease: "power4.out" }, {{THEAD}});
+    const beats = [{{BEATS}}];
+    beats.forEach(([tq, ta], k) => {
+      const r = "#pa-r" + (k + 1);
+      tl.fromTo(r + " .pa-q", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, tq);
+      tl.fromTo(r + " path", { attr: { "stroke-dashoffset": 1.1 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.3, ease: "power2.out" }, ta - 0.25);
+      tl.fromTo(r + " .pa-a", { clipPath: "inset(-10px 100% -10px -10px)" }, { clipPath: "inset(-10px -10px -10px -10px)", duration: 0.35, ease: "power2.out" }, ta);
+    });
+    // "Still unsure which path is yours?" — every path dims, the camera leans in; then the title hits.
+    tl.to(".pa-row", { opacity: 0.32, duration: 0.6, ease: "power2.inOut" }, {{TUNSURE}});
+    tl.fromTo("#pa-cam", { scale: 1 }, { scale: 1.06, duration: {{PUSH}}, ease: "sine.inOut", immediateRender: false }, {{TPUSH}});
+    window.__timelines["path"] = tl;
+  </script>
+</template>

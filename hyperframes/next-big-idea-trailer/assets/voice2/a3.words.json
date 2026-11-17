@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Start",
+    "start": 0.08,
+    "end": 0.36,
+    "id": "w0"
+  },
+  {
+    "text": "here.",
+    "start": 0.38,
+    "end": 1,
+    "id": "w1"
+  },
+  {
+    "text": "List",
+    "start": 1,
+    "end": 1.05,
+    "id": "w2"
+  },
+  {
+    "text": "the",
+    "start": 1.24,
+    "end": 1.37,
+    "id": "w3"
+  },
+  {
+    "text": "20",
+    "start": 1.37,
+    "end": 1.68,
+    "id": "w4"
+  },
+  {
+    "text": "questions",
+    "start": 1.72,
+    "end": 2.13,
+    "id": "w5"
+  },
+  {
+    "text": "customers",
+    "start": 2.21,
+    "end": 2.76,
+    "id": "w6"
+  },
+  {
+    "text": "ask",
+    "start": 2.76,
+    "end": 3.12,
+    "id": "w7"
+  },
+  {
+    "text": "most.",
+    "start": 3.12,
+    "end": 3.6,
+    "id": "w8"
+  }
+]

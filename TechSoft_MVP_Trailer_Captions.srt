@@ -1,0 +1,35 @@
+1
+00:00:00,500 --> 00:00:02,800
+You've been thinking about it for a while.
+
+2
+00:00:03,000 --> 00:00:04,900
+A problem worth solving.
+
+3
+00:00:05,200 --> 00:00:07,400
+An idea that could make a difference.
+
+4
+00:00:07,800 --> 00:00:09,900
+But what should you build first?
+
+5
+00:00:10,300 --> 00:00:12,000
+Start with a conversation.
+
+6
+00:00:12,300 --> 00:00:15,600
+We'll help you explore the problem, shape your idea,
+
+7
+00:00:15,700 --> 00:00:19,800
+and plan an MVP—an app or website built around what people need.
+
+8
+00:00:21,000 --> 00:00:25,500
+Your next big idea starts with one conversation.
+
+9
+00:00:27,200 --> 00:00:29,500
+Let's talk.

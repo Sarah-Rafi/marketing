@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Now",
+    "start": 0.06,
+    "end": 0.25,
+    "id": "w0"
+  },
+  {
+    "text": "I",
+    "start": 0.25,
+    "end": 0.32,
+    "id": "w1"
+  },
+  {
+    "text": "walk",
+    "start": 0.32,
+    "end": 0.61,
+    "id": "w2"
+  },
+  {
+    "text": "into",
+    "start": 0.7,
+    "end": 0.99,
+    "id": "w3"
+  },
+  {
+    "text": "every",
+    "start": 0.99,
+    "end": 1.4,
+    "id": "w4"
+  },
+  {
+    "text": "session,",
+    "start": 1.4,
+    "end": 2.08,
+    "id": "w5"
+  },
+  {
+    "text": "knowing",
+    "start": 2.08,
+    "end": 2.4,
+    "id": "w6"
+  },
+  {
+    "text": "how",
+    "start": 2.4,
+    "end": 2.6,
+    "id": "w7"
+  },
+  {
+    "text": "their",
+    "start": 2.6,
+    "end": 2.93,
+    "id": "w8"
+  },
+  {
+    "text": "week",
+    "start": 2.93,
+    "end": 3.18,
+    "id": "w9"
+  },
+  {
+    "text": "really",
+    "start": 3.2,
+    "end": 3.6,
+    "id": "w10"
+  },
+  {
+    "text": "went.",
+    "start": 3.6,
+    "end": 4,
+    "id": "w11"
+  }
+]

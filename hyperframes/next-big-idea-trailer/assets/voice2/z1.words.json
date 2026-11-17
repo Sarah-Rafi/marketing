@@ -1,0 +1,62 @@
+[
+  {
+    "text": "still",
+    "start": 0.07,
+    "end": 0.47,
+    "id": "w0"
+  },
+  {
+    "text": "unsure",
+    "start": 0.47,
+    "end": 0.99,
+    "id": "w1"
+  },
+  {
+    "text": "which",
+    "start": 1.03,
+    "end": 1.41,
+    "id": "w2"
+  },
+  {
+    "text": "path",
+    "start": 1.51,
+    "end": 1.87,
+    "id": "w3"
+  },
+  {
+    "text": "is",
+    "start": 1.87,
+    "end": 1.97,
+    "id": "w4"
+  },
+  {
+    "text": "yours.",
+    "start": 2.05,
+    "end": 2.56,
+    "id": "w5"
+  },
+  {
+    "text": "Start",
+    "start": 2.63,
+    "end": 2.86,
+    "id": "w6"
+  },
+  {
+    "text": "with",
+    "start": 2.93,
+    "end": 3.21,
+    "id": "w7"
+  },
+  {
+    "text": "a",
+    "start": 3.21,
+    "end": 3.28,
+    "id": "w8"
+  },
+  {
+    "text": "conversation.",
+    "start": 3.28,
+    "end": 4.38,
+    "id": "w9"
+  }
+]

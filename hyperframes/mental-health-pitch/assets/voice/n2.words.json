@@ -1,0 +1,68 @@
+[
+  {
+    "text": "A",
+    "start": 0.06,
+    "end": 0.06,
+    "id": "w0"
+  },
+  {
+    "text": "mental",
+    "start": 0.06,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "health",
+    "start": 0.42,
+    "end": 0.73,
+    "id": "w2"
+  },
+  {
+    "text": "app",
+    "start": 0.83,
+    "end": 0.96,
+    "id": "w3"
+  },
+  {
+    "text": "can",
+    "start": 0.96,
+    "end": 1.14,
+    "id": "w4"
+  },
+  {
+    "text": "meet",
+    "start": 1.14,
+    "end": 1.37,
+    "id": "w5"
+  },
+  {
+    "text": "people",
+    "start": 1.42,
+    "end": 1.74,
+    "id": "w6"
+  },
+  {
+    "text": "right",
+    "start": 1.74,
+    "end": 2.04,
+    "id": "w7"
+  },
+  {
+    "text": "where",
+    "start": 2.04,
+    "end": 2.32,
+    "id": "w8"
+  },
+  {
+    "text": "they",
+    "start": 2.38,
+    "end": 2.58,
+    "id": "w9"
+  },
+  {
+    "text": "are.",
+    "start": 2.58,
+    "end": 2.8,
+    "id": "w10"
+  }
+]

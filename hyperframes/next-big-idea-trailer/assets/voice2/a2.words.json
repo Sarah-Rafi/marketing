@@ -1,0 +1,62 @@
+[
+  {
+    "text": "An",
+    "start": 0.13,
+    "end": 0.15,
+    "id": "w0"
+  },
+  {
+    "text": "AI",
+    "start": 0.15,
+    "end": 0.23,
+    "id": "w1"
+  },
+  {
+    "text": "assistant",
+    "start": 0.3,
+    "end": 0.97,
+    "id": "w2"
+  },
+  {
+    "text": "trained",
+    "start": 0.97,
+    "end": 1.49,
+    "id": "w3"
+  },
+  {
+    "text": "on",
+    "start": 1.49,
+    "end": 1.64,
+    "id": "w4"
+  },
+  {
+    "text": "their",
+    "start": 1.64,
+    "end": 2.01,
+    "id": "w5"
+  },
+  {
+    "text": "own",
+    "start": 2.01,
+    "end": 2.16,
+    "id": "w6"
+  },
+  {
+    "text": "answers",
+    "start": 2.23,
+    "end": 2.74,
+    "id": "w7"
+  },
+  {
+    "text": "covers",
+    "start": 2.84,
+    "end": 3.36,
+    "id": "w8"
+  },
+  {
+    "text": "both.",
+    "start": 3.36,
+    "end": 3.76,
+    "id": "w9"
+  }
+]

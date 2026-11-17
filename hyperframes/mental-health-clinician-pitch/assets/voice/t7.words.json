@@ -1,0 +1,92 @@
+[
+  {
+    "text": "I",
+    "start": 0.06,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "need",
+    "start": 0.13,
+    "end": 0.3,
+    "id": "w1"
+  },
+  {
+    "text": "something",
+    "start": 0.3,
+    "end": 0.83,
+    "id": "w2"
+  },
+  {
+    "text": "that's",
+    "start": 0.83,
+    "end": 1.16,
+    "id": "w3"
+  },
+  {
+    "text": "there",
+    "start": 1.23,
+    "end": 1.45,
+    "id": "w4"
+  },
+  {
+    "text": "for",
+    "start": 1.55,
+    "end": 1.64,
+    "id": "w5"
+  },
+  {
+    "text": "them",
+    "start": 1.64,
+    "end": 1.84,
+    "id": "w6"
+  },
+  {
+    "text": "between",
+    "start": 1.84,
+    "end": 2.26,
+    "id": "w7"
+  },
+  {
+    "text": "sessions",
+    "start": 2.26,
+    "end": 2.88,
+    "id": "w8"
+  },
+  {
+    "text": "and",
+    "start": 3.26,
+    "end": 3.38,
+    "id": "w9"
+  },
+  {
+    "text": "keeps",
+    "start": 3.42,
+    "end": 3.68,
+    "id": "w10"
+  },
+  {
+    "text": "me",
+    "start": 3.68,
+    "end": 3.79,
+    "id": "w11"
+  },
+  {
+    "text": "in",
+    "start": 3.79,
+    "end": 3.9,
+    "id": "w12"
+  },
+  {
+    "text": "the",
+    "start": 3.9,
+    "end": 4.08,
+    "id": "w13"
+  },
+  {
+    "text": "loop.",
+    "start": 4.08,
+    "end": 4.46,
+    "id": "w14"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "text": "I",
+    "start": 0.07,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "only",
+    "start": 0.13,
+    "end": 0.35,
+    "id": "w1"
+  },
+  {
+    "text": "find",
+    "start": 0.35,
+    "end": 0.63,
+    "id": "w2"
+  },
+  {
+    "text": "out",
+    "start": 0.63,
+    "end": 0.84,
+    "id": "w3"
+  },
+  {
+    "text": "a",
+    "start": 0.84,
+    "end": 0.91,
+    "id": "w4"
+  },
+  {
+    "text": "week",
+    "start": 0.91,
+    "end": 1.19,
+    "id": "w5"
+  },
+  {
+    "text": "later.",
+    "start": 1.19,
+    "end": 1.64,
+    "id": "w6"
+  }
+]

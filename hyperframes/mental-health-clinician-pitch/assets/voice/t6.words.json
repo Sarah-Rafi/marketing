@@ -1,0 +1,116 @@
+[
+  {
+    "text": "And",
+    "start": 0.11,
+    "end": 0.5,
+    "id": "w0"
+  },
+  {
+    "text": "at",
+    "start": 0.5,
+    "end": 0.83,
+    "id": "w1"
+  },
+  {
+    "text": "4am,",
+    "start": 0.83,
+    "end": 1.83,
+    "id": "w2"
+  },
+  {
+    "text": "a",
+    "start": 1.83,
+    "end": 1.89,
+    "id": "w3"
+  },
+  {
+    "text": "patient",
+    "start": 1.95,
+    "end": 2.43,
+    "id": "w4"
+  },
+  {
+    "text": "messages",
+    "start": 2.43,
+    "end": 3.03,
+    "id": "w5"
+  },
+  {
+    "text": "me",
+    "start": 3.03,
+    "end": 3.19,
+    "id": "w6"
+  },
+  {
+    "text": "panicking,",
+    "start": 3.26,
+    "end": 3.84,
+    "id": "w7"
+  },
+  {
+    "text": "I",
+    "start": 3.84,
+    "end": 3.95,
+    "id": "w8"
+  },
+  {
+    "text": "want",
+    "start": 3.95,
+    "end": 4.14,
+    "id": "w9"
+  },
+  {
+    "text": "to",
+    "start": 4.25,
+    "end": 4.39,
+    "id": "w10"
+  },
+  {
+    "text": "help,",
+    "start": 4.39,
+    "end": 4.78,
+    "id": "w11"
+  },
+  {
+    "text": "I",
+    "start": 4.92,
+    "end": 4.94,
+    "id": "w12"
+  },
+  {
+    "text": "just",
+    "start": 4.94,
+    "end": 5.15,
+    "id": "w13"
+  },
+  {
+    "text": "can't",
+    "start": 5.19,
+    "end": 5.52,
+    "id": "w14"
+  },
+  {
+    "text": "be",
+    "start": 5.52,
+    "end": 5.67,
+    "id": "w15"
+  },
+  {
+    "text": "awake",
+    "start": 5.67,
+    "end": 5.97,
+    "id": "w16"
+  },
+  {
+    "text": "for",
+    "start": 5.97,
+    "end": 6.16,
+    "id": "w17"
+  },
+  {
+    "text": "everyone.",
+    "start": 6.16,
+    "end": 6.81,
+    "id": "w18"
+  }
+]

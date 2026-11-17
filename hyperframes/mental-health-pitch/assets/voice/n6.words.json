@@ -1,0 +1,68 @@
+[
+  {
+    "text": "plus",
+    "start": 0.04,
+    "end": 0.28,
+    "id": "w0"
+  },
+  {
+    "text": "a",
+    "start": 0.28,
+    "end": 0.35,
+    "id": "w1"
+  },
+  {
+    "text": "caring",
+    "start": 0.35,
+    "end": 0.75,
+    "id": "w2"
+  },
+  {
+    "text": "community",
+    "start": 0.8,
+    "end": 1.33,
+    "id": "w3"
+  },
+  {
+    "text": "so",
+    "start": 1.33,
+    "end": 1.63,
+    "id": "w4"
+  },
+  {
+    "text": "no",
+    "start": 1.63,
+    "end": 1.68,
+    "id": "w5"
+  },
+  {
+    "text": "one",
+    "start": 1.68,
+    "end": 1.89,
+    "id": "w6"
+  },
+  {
+    "text": "has",
+    "start": 1.89,
+    "end": 2.1,
+    "id": "w7"
+  },
+  {
+    "text": "to",
+    "start": 2.1,
+    "end": 2.21,
+    "id": "w8"
+  },
+  {
+    "text": "struggle",
+    "start": 2.24,
+    "end": 2.77,
+    "id": "w9"
+  },
+  {
+    "text": "alone.",
+    "start": 2.82,
+    "end": 3.35,
+    "id": "w10"
+  }
+]

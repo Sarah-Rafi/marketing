@@ -1,0 +1,208 @@
+{
+ "total": 125.341,
+ "impact": 107.716,
+ "starts": {
+  "o1": 1.0,
+  "o2": 4.0,
+  "o3": 6.4,
+  "o4": 9.2,
+  "a1": 14.403,
+  "a2": 20.392,
+  "a3": 24.568,
+  "b1": 29.316,
+  "b2": 32.489,
+  "b3": 37.39,
+  "c1": 42.373,
+  "c2": 46.208,
+  "c3": 51.664,
+  "d1": 56.455,
+  "d2": 61.228,
+  "d3": 65.191,
+  "e1": 70.131,
+  "e2": 73.432,
+  "e3": 78.227,
+  "p1": 84.035,
+  "p2": 86.114,
+  "p3": 89.473,
+  "p4": 93.024,
+  "p5": 96.553,
+  "p6": 100.829,
+  "z1": 105.116,
+  "z2": 110.016,
+  "z3": 118.141,
+  "z4": 122.041
+ },
+ "durs": {
+  "o1": 2.389,
+  "o2": 1.856,
+  "o3": 1.835,
+  "o4": 4.203,
+  "a1": 5.589,
+  "a2": 3.776,
+  "a3": 3.648,
+  "b1": 2.773,
+  "b2": 4.501,
+  "b3": 3.883,
+  "c1": 3.435,
+  "c2": 5.056,
+  "c3": 3.691,
+  "d1": 4.373,
+  "d2": 3.563,
+  "d3": 3.84,
+  "e1": 2.901,
+  "e2": 4.395,
+  "e3": 4.608,
+  "p1": 1.579,
+  "p2": 2.859,
+  "p3": 3.051,
+  "p4": 3.029,
+  "p5": 3.776,
+  "p6": 2.987,
+  "z1": 4.267,
+  "z2": 5.525,
+  "z3": 3.221,
+  "z4": 1.152
+ },
+ "scenes": [
+  {
+   "id": "notebook",
+   "start": 0,
+   "dur": 6.1,
+   "kind": "graphics"
+  },
+  {
+   "id": "options",
+   "start": 6.1,
+   "dur": 2.8,
+   "kind": "graphics"
+  },
+  {
+   "id": "city",
+   "start": 8.9,
+   "dur": 4.903,
+   "kind": "graphics"
+  },
+  {
+   "id": "idea-a",
+   "start": 13.803,
+   "dur": 14.913,
+   "kind": "graphics"
+  },
+  {
+   "id": "idea-b",
+   "start": 28.716,
+   "dur": 13.057,
+   "kind": "graphics"
+  },
+  {
+   "id": "idea-c",
+   "start": 41.773,
+   "dur": 14.082,
+   "kind": "graphics"
+  },
+  {
+   "id": "idea-d",
+   "start": 55.855,
+   "dur": 13.676,
+   "kind": "graphics"
+  },
+  {
+   "id": "idea-e",
+   "start": 69.531,
+   "dur": 14.004,
+   "kind": "graphics"
+  },
+  {
+   "id": "path",
+   "start": 83.535,
+   "dur": 24.181,
+   "kind": "graphics"
+  },
+  {
+   "id": "title",
+   "start": 107.716,
+   "dur": 2.2,
+   "kind": "graphics"
+  },
+  {
+   "id": "process",
+   "start": 109.916,
+   "dur": 7.725,
+   "kind": "graphics"
+  },
+  {
+   "id": "close",
+   "start": 117.641,
+   "dur": 3.7,
+   "kind": "graphics"
+  },
+  {
+   "id": "endcard",
+   "start": 121.341,
+   "dur": 4.0,
+   "kind": "graphics"
+  }
+ ],
+ "captions": [
+  [
+   1.1,
+   2.56,
+   "You've been thinking about it"
+  ],
+  [
+   2.56,
+   3.44,
+   "for a while."
+  ],
+  [
+   4.01,
+   5.91,
+   "A problem worth solving."
+  ],
+  [
+   6.44,
+   8.29,
+   "But what should you build first?"
+  ],
+  [
+   9.24,
+   11.17,
+   "Look at what people are building"
+  ],
+  [
+   11.17,
+   13.45,
+   "right now, and where each one starts."
+  ],
+  [
+   105.14,
+   107.73,
+   "Still unsure which path is yours?"
+  ],
+  [
+   110.05,
+   112.41,
+   "We'll bring clarity to your idea,"
+  ],
+  [
+   112.41,
+   113.89,
+   "plan the first version,"
+  ],
+  [
+   113.89,
+   115.59,
+   "and help you bring it to life."
+  ],
+  [
+   118.23,
+   119.29,
+   "Your next big idea"
+  ],
+  [
+   119.29,
+   121.41,
+   "starts with one conversation."
+  ]
+ ]
+}

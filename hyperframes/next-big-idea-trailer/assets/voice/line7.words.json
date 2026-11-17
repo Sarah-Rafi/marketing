@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Your",
+    "start": 0.14,
+    "end": 0.32,
+    "id": "w0"
+  },
+  {
+    "text": "next",
+    "start": 0.32,
+    "end": 0.52,
+    "id": "w1"
+  },
+  {
+    "text": "big",
+    "start": 0.65,
+    "end": 0.88,
+    "id": "w2"
+  },
+  {
+    "text": "idea",
+    "start": 0.88,
+    "end": 1.2,
+    "id": "w3"
+  },
+  {
+    "text": "starts",
+    "start": 1.2,
+    "end": 1.67,
+    "id": "w4"
+  },
+  {
+    "text": "with",
+    "start": 1.67,
+    "end": 1.98,
+    "id": "w5"
+  },
+  {
+    "text": "one",
+    "start": 1.99,
+    "end": 2.23,
+    "id": "w6"
+  },
+  {
+    "text": "conversation.",
+    "start": 2.23,
+    "end": 3.22,
+    "id": "w7"
+  }
+]

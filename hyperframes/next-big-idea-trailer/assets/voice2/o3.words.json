@@ -1,0 +1,38 @@
+[
+  {
+    "text": "But",
+    "start": 0.09,
+    "end": 0.16,
+    "id": "w0"
+  },
+  {
+    "text": "what",
+    "start": 0.16,
+    "end": 0.37,
+    "id": "w1"
+  },
+  {
+    "text": "should",
+    "start": 0.37,
+    "end": 0.68,
+    "id": "w2"
+  },
+  {
+    "text": "you",
+    "start": 0.69,
+    "end": 0.85,
+    "id": "w3"
+  },
+  {
+    "text": "build",
+    "start": 0.85,
+    "end": 0.95,
+    "id": "w4"
+  },
+  {
+    "text": "first?",
+    "start": 1.12,
+    "end": 1.54,
+    "id": "w5"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Trust",
+    "start": 0.06,
+    "end": 0.4,
+    "id": "w0"
+  },
+  {
+    "text": "decides",
+    "start": 0.4,
+    "end": 0.95,
+    "id": "w1"
+  },
+  {
+    "text": "the",
+    "start": 0.95,
+    "end": 1.19,
+    "id": "w2"
+  },
+  {
+    "text": "sale.",
+    "start": 1.19,
+    "end": 1.76,
+    "id": "w3"
+  },
+  {
+    "text": "Design",
+    "start": 1.83,
+    "end": 2.25,
+    "id": "w4"
+  },
+  {
+    "text": "and",
+    "start": 2.25,
+    "end": 2.49,
+    "id": "w5"
+  },
+  {
+    "text": "brand",
+    "start": 2.49,
+    "end": 2.9,
+    "id": "w6"
+  },
+  {
+    "text": "come",
+    "start": 2.9,
+    "end": 3.09,
+    "id": "w7"
+  },
+  {
+    "text": "first.",
+    "start": 3.56,
+    "end": 3.9,
+    "id": "w8"
+  }
+]

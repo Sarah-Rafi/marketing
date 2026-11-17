@@ -1,0 +1,86 @@
+[
+  {
+    "text": "So",
+    "start": 0.13,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "what",
+    "start": 0.18,
+    "end": 0.53,
+    "id": "w1"
+  },
+  {
+    "text": "if",
+    "start": 0.53,
+    "end": 0.71,
+    "id": "w2"
+  },
+  {
+    "text": "the",
+    "start": 0.71,
+    "end": 0.98,
+    "id": "w3"
+  },
+  {
+    "text": "gym,",
+    "start": 0.98,
+    "end": 1.44,
+    "id": "w4"
+  },
+  {
+    "text": "the",
+    "start": 1.52,
+    "end": 1.65,
+    "id": "w5"
+  },
+  {
+    "text": "studio",
+    "start": 1.69,
+    "end": 2.11,
+    "id": "w6"
+  },
+  {
+    "text": "and",
+    "start": 2.12,
+    "end": 2.25,
+    "id": "w7"
+  },
+  {
+    "text": "the",
+    "start": 2.25,
+    "end": 2.36,
+    "id": "w8"
+  },
+  {
+    "text": "clinic",
+    "start": 2.42,
+    "end": 2.57,
+    "id": "w9"
+  },
+  {
+    "text": "could",
+    "start": 2.66,
+    "end": 2.85,
+    "id": "w10"
+  },
+  {
+    "text": "come",
+    "start": 2.87,
+    "end": 3.01,
+    "id": "w11"
+  },
+  {
+    "text": "to",
+    "start": 3.01,
+    "end": 3.09,
+    "id": "w12"
+  },
+  {
+    "text": "them?",
+    "start": 3.09,
+    "end": 3.37,
+    "id": "w13"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Salons",
+    "start": 0.08,
+    "end": 0.47,
+    "id": "w0"
+  },
+  {
+    "text": "and",
+    "start": 0.47,
+    "end": 0.71,
+    "id": "w1"
+  },
+  {
+    "text": "clinics",
+    "start": 0.71,
+    "end": 1.24,
+    "id": "w2"
+  },
+  {
+    "text": "lose",
+    "start": 1.26,
+    "end": 1.55,
+    "id": "w3"
+  },
+  {
+    "text": "money",
+    "start": 1.58,
+    "end": 1.97,
+    "id": "w4"
+  },
+  {
+    "text": "to",
+    "start": 1.97,
+    "end": 2.13,
+    "id": "w5"
+  },
+  {
+    "text": "no",
+    "start": 2.13,
+    "end": 2.27,
+    "id": "w6"
+  },
+  {
+    "text": "shows.",
+    "start": 2.29,
+    "end": 2.77,
+    "id": "w7"
+  }
+]
