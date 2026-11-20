@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #07050d;
+        --pink: #ff2e88;
+        --cyan: #19e3ff;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--ground);
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: var(--ground);
+      }
+      .bar {
+        position: absolute;
+        left: 0;
+        width: 1920px;
+        height: 110px;
+        background: #000;
+        z-index: 50;
+      }
+      #bar-top {
+        top: 0;
+      }
+      #bar-bottom {
+        bottom: 0;
+      }
+      #fx-vignette {
+        position: absolute;
+        inset: 0;
+        z-index: 40;
+        pointer-events: none;
+        background: radial-gradient(ellipse 80% 75% at 50% 50%, transparent 58%, rgba(0, 0, 0, 0.5) 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1920" data-height="1080">
+      <div id="walk" data-composition-id="walk" data-composition-src="compositions/walk.html" data-start="0" data-duration="2.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="getin" data-composition-id="getin" data-composition-src="compositions/getin.html" data-start="2.4" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="driveoff" data-composition-id="driveoff" data-composition-src="compositions/driveoff.html" data-start="4.2" data-duration="1.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="coast" data-composition-id="coast" data-composition-src="compositions/coast.html" data-start="5.6" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="strip" data-composition-id="strip" data-composition-src="compositions/strip.html" data-start="7.2" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="cabin" data-composition-id="cabin" data-composition-src="compositions/cabin.html" data-start="8.8" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="shootout" data-composition-id="shootout" data-composition-src="compositions/shootout.html" data-start="10.4" data-duration="2.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="turn" data-composition-id="turn" data-composition-src="compositions/turn.html" data-start="12.6" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="ending" data-composition-id="ending" data-composition-src="compositions/ending.html" data-start="13.8" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <audio id="mix" class="clip" src="assets/audio/mix.wav" data-start="0" data-duration="15" data-track-index="2" data-volume="1"></audio>
+      <div id="fx-vignette"></div>
+      <div id="bar-top" class="bar"></div>
+      <div id="bar-bottom" class="bar"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

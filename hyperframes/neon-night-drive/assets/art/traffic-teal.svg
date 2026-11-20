@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 440" width="220" height="440"><defs></defs><g stroke="#0b0b12" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+<rect x="12" y="10" width="196" height="420" rx="56" fill="#2fb7a8"/>
+<path d="M12,140 L208,140 L208,66 Q208,10 152,10 L68,10 Q12,10 12,66 Z" fill="#25968a"/>
+<path d="M12,360 L208,360 L208,374 Q208,430 152,430 L68,430 Q12,430 12,374 Z" fill="#25968a"/>
+<path d="M36,150 L184,150 L170,196 L50,196 Z" fill="#1d3b5c"/>
+<rect x="48" y="196" width="124" height="110" rx="10" fill="#2fb7a8"/>
+<path d="M50,306 L170,306 L182,346 L38,346 Z" fill="#1d3b5c"/>
+<rect x="34" y="16" width="34" height="14" rx="4" fill="#ffe9a8" stroke-width="3"/><rect x="152" y="16" width="34" height="14" rx="4" fill="#ffe9a8" stroke-width="3"/>
+<rect x="30" y="414" width="44" height="10" rx="3" fill="#ff2244" stroke-width="3"/><rect x="146" y="414" width="44" height="10" rx="3" fill="#ff2244" stroke-width="3"/>
+</g>
+<path d="M90,24 L90,134 M130,24 L130,134" stroke="none" stroke-width="5" opacity=".8"/>
+</svg>

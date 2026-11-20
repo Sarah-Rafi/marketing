@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340"><defs></defs>
+<defs><clipPath id="pb"><path d="M40,250 L38,178 Q44,160 80,158 L262,150 Q300,100 362,92 L620,92 Q660,96 700,150 L930,160 Q966,166 970,200 L975,250 L860,250 A80,80 0 0 0 700,250 L310,250 A80,80 0 0 0 150,250 L40,250 Z"/></clipPath></defs>
+<g clip-path="url(#pb)"><rect width="1000" height="340" fill="#f1f2f6"/>
+<rect x="0" y="0" width="262" height="340" fill="#15151c"/><rect x="700" y="0" width="300" height="340" fill="#15151c"/>
+<rect x="0" y="232" width="1000" height="30" fill="#15151c"/></g>
+<path d="M40,250 L38,178 Q44,160 80,158 L262,150 Q300,100 362,92 L620,92 Q660,96 700,150 L930,160 Q966,166 970,200 L975,250 L860,250 A80,80 0 0 0 700,250 L310,250 A80,80 0 0 0 150,250 L40,250 Z" fill="none" stroke="#0b0b12" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M300,148 Q330,108 368,104 L470,104 L470,148 Z M488,148 L488,104 L612,104 Q650,110 676,148 Z" fill="#0e1830" stroke="#0b0b12" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M330,140 L380,108" stroke="#7fb6ff" stroke-width="6" opacity=".5"/>
+<rect x="430" y="70" width="140" height="22" rx="6" fill="#222" stroke="#0b0b12" stroke-linejoin="round" stroke-linecap="round" stroke-width="4"/>
+<rect x="436" y="73" width="62" height="16" rx="3" fill="#ff2a3d"/><rect x="502" y="73" width="62" height="16" rx="3" fill="#2a6bff"/>
+<text x="490" y="210" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="38" fill="#15151c">POLICE</text>
+<rect x="944" y="176" width="24" height="16" rx="4" fill="#ffe9a8" stroke="#0b0b12" stroke-linejoin="round" stroke-linecap="round" stroke-width="4"/>
+<rect x="970" y="196" width="22" height="52" rx="4" fill="#2b2d33" stroke="#0b0b12" stroke-linejoin="round" stroke-linecap="round" stroke-width="4"/>
+</svg>
