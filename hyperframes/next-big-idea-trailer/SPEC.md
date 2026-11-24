@@ -1,30 +1,23 @@
-# SPEC — "Start with a conversation" (2:05 film; the 30 s cut is in versions/30s/)
+# SPEC — TECTSOFT: "From idea to impact" (43 s)
 
-GOAL:    The viewer with a half-formed idea sees five real ideas mapped from problem to first step, knows which path fits theirs, and wants the conversation.
-OUTPUT:  HyperFrames, 1920 x 1080, 30 fps, MP4.
-TIME:    125.3 s x 30 = 3760 frames (layout from narration in timeline.json). Score: original, 120 bpm.
+GOAL:    A founder or business with an idea understands that TECTSOFT is a long-term product partner — understand, research, plan, build, launch, grow — not just an app/web vendor, and brings their idea.
+OUTPUT:  HyperFrames, 1920 x 1080, 30 fps, MP4, 43 s. Brief asked 60–75 s; client asked as short as possible.
+TAGLINE: "From idea to impact." (hook subline, final promise frame). End card keeps "YOUR VISION. OUR TECHNOLOGY."
+VOICE:   Kokoro `am_michael`, 1.0x, 8 short method lines (`scripts/narration.tsv`, `assets/voice4/`). Narration stays general and actionable; the screen carries the detail lists. Spoken "Tect soft", written TECTSOFT.
+SCORE:   `scripts/score.py` — soft pad + piano (questions), arpeggio (TECTSOFT arrives), light pulse (journey), C major resolve (end). Glass sweeps on beat changes, no whooshes.
 
-LOOK:
-- Ground: warm black `#0E0D0C`; never a flat void — every shot has a lit surface (paper, skyline, wall, graphite grid). Grain 6% (stepped, 12 fps), vignette 35% at the corners, 2.0:1 letterbox (54 px bars).
-- Ink `#EAE2CF` (cream). Accent: red pen `#C8372D` / `#E0483B` on dark — only on the circled problem, the expanding ring, the title underline, the check marks and "Let's talk.".
-- Display: League Gothic, 150 / 330 px, tracking 0.04 em. Handwriting: Caveat 600 (OFL, `assets/fonts/Caveat.ttf`), 64-72 px. Captions: Inter 600, 50 px, cream on a 72% warm-black scrim sized to the text, 120 px from the bottom.
-- Light: one warm key from upper left (the desk lamp), everything else falls off.
+LOOK: dark professional. Ground #0B0F1A + 48 px dot grid + faint blue top gradient; cards #131A29 / #26304A; ink #F2F4F7, #D6DBE6, #9AA4B8; blue #2F7BFF, #5B9BFF text on dark, #1F5FD6 behind white. Inter 800 titles; Archivo Black only for the wordmark. Enter from the right, leave to the left, 0.5 s power3.out. One product mockup in the whole film.
 
-OBJECTS: a ruled notebook page with a red margin and handwriting; a night skyline whose windows light up; pencil wireframes of app pieces; sticky notes on a wall; a phone and a browser window; people in silhouette.
+STRUCTURE (compositions/story.html, one continuous scene; compositions/endcard.html):
+1. 0–3      "Ever have an idea, but don't know where to start?" (frame 0).
+2. 3–7.4    "TECTSOFT helps you take your idea to impact." / "One partner for the whole journey. Here's how we work." The idea becomes stop 1 of Idea · Understand · Research · Plan · Build · Launch · Grow.
+3. 7.4–34   The line docks as a progress bar. Each stage is stated as TECTSOFT's method (imperative, never "then we…"):
+   - Understand the idea. Validate the market. (two cards; "Decide with facts, not guesses.")
+   - Turn the idea into a clear plan. (typical questions fly into a 3-phase roadmap) — the highlight.
+   - Design and build around real users. (browser + phone, 8 capabilities)
+   - Test it. Launch it. Put it in users' hands. (launch checklist, LIVE v1.0)
+   - Maintain, improve, keep growing. (loop v1.0 → v2.0, after-launch list)
+4. 34–36    Full line under "From idea to impact."
+5. 36–43    End card: logo, TECTSOFT, YOUR VISION. OUR TECHNOLOGY., "Let's build it together.", typed tectsoft.com, hello@tectsoft.com, TALK TO US TODAY. Voice: "Your vision, our technology. Let's build it together."
 
-MOTION: enter `power4.out` 0.25-0.6 s; moves `power3.inOut`; camera `sine.inOut` (slow) or `power3.in` (zoom-through); no idle wobble; nothing moves while it is read on the title and the end card.
-
-SHOTS (opening and close, shared with the 30 s cut; times below are from the 30 s cut):
-1. 0.0-6.1 Notebook. Push 1.0 → 1.12 while new lines write themselves under crossed-out ones; at 4.35 the red pen circles "they still do it by hand."; 5.75 zoom-through into the circle. Sound: drone, heartbeat, pen scratches.
-2. 6.1-9.2 Skyline. The red circle becomes a ring expanding across a dark city; every window it passes lights amber. Pull back 1.25 → 1.0. Whoosh + soft boom at the cut.
-3. 9.2-12.0 Options. 14 pencil wireframes pile up faster and faster (ticks accelerate); 11.3 freeze, collapse to a point, silence.
-4. 12.0-14.5 Title. Impact. "START WITH / A CONVERSATION" slams in and holds; red underline draws. Caption dropped (embedded).
-5. 14.5-23.2 Process. Sticky notes slap onto a wall (explore), snap into three columns (shape, 16.4), fly into a phone and a browser as UI cards (MVP, 18.05), silhouettes of people rise in front, lit by the screens (21.4).
-6. 23.2-26.9 Close. Back to the notebook: pull back from the circled line, a check mark and "start here" are written; the lamp dims.
-7. 26.9-30.0 End card: "Your next big idea starts with a conversation." then "Let's talk." written in red as it is spoken (27.6). Final hit at 26.9, chord rings out.
-
-BANNED: glowing orbs, particles, lens flares, purple/blue gradients, glass cards, "01/02" labels, Marvel music/logos/characters or a pastiche of its fanfare, text drifting while read.
-
-QA: frames 2.0, 5.0, 7.5, 10.8, 13.0, 16.0, 17.5, 20.0, 22.5, 25.0, 28.8 — each shows its object at hero size, the caption (where one belongs) readable on its scrim, nothing outside the action-safe box.
-
-SHOTS (2:05 cut): see timeline.json for exact windows — notebook 0–6.1 · options 6.1–8.9 · skyline 8.9–13.8 · five idea cards 13.8–83.5 (problem → fix → red-pen "Start here") · path 83.5–107.7 · title impact 107.7 · process 109.9 · notebook close 117.6 · end card 121.3–125.3.
+BANNED: testimonials, case studies, stats, guaranteed sales/downloads, store logos, glow-heavy effects, 3D, camera zooms, white backgrounds, misspelling TECTSOFT.

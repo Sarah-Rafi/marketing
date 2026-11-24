@@ -1,0 +1,98 @@
+[
+  {
+    "text": "What",
+    "start": 0.04,
+    "end": 0.31,
+    "id": "w0"
+  },
+  {
+    "text": "if",
+    "start": 0.32,
+    "end": 0.48,
+    "id": "w1"
+  },
+  {
+    "text": "you",
+    "start": 0.48,
+    "end": 0.72,
+    "id": "w2"
+  },
+  {
+    "text": "had",
+    "start": 0.72,
+    "end": 0.96,
+    "id": "w3"
+  },
+  {
+    "text": "one",
+    "start": 0.96,
+    "end": 1.2,
+    "id": "w4"
+  },
+  {
+    "text": "digital",
+    "start": 1.2,
+    "end": 1.76,
+    "id": "w5"
+  },
+  {
+    "text": "space",
+    "start": 1.76,
+    "end": 1.84,
+    "id": "w6"
+  },
+  {
+    "text": "to",
+    "start": 2.24,
+    "end": 2.32,
+    "id": "w7"
+  },
+  {
+    "text": "make",
+    "start": 2.32,
+    "end": 2.47,
+    "id": "w8"
+  },
+  {
+    "text": "that",
+    "start": 2.61,
+    "end": 2.71,
+    "id": "w9"
+  },
+  {
+    "text": "journey",
+    "start": 2.8,
+    "end": 3.08,
+    "id": "w10"
+  },
+  {
+    "text": "more",
+    "start": 3.08,
+    "end": 3.24,
+    "id": "w11"
+  },
+  {
+    "text": "connected,",
+    "start": 3.3,
+    "end": 3.94,
+    "id": "w12"
+  },
+  {
+    "text": "organised",
+    "start": 3.97,
+    "end": 4.51,
+    "id": "w13"
+  },
+  {
+    "text": "and",
+    "start": 4.55,
+    "end": 4.68,
+    "id": "w14"
+  },
+  {
+    "text": "accessible?",
+    "start": 4.72,
+    "end": 5.36,
+    "id": "w15"
+  }
+]

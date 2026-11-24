@@ -1,0 +1,44 @@
+[
+  {
+    "text": "and",
+    "start": 0.05,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "the",
+    "start": 0.18,
+    "end": 0.36,
+    "id": "w1"
+  },
+  {
+    "text": "problems",
+    "start": 0.36,
+    "end": 0.86,
+    "id": "w2"
+  },
+  {
+    "text": "keep",
+    "start": 0.86,
+    "end": 1.11,
+    "id": "w3"
+  },
+  {
+    "text": "coming",
+    "start": 1.11,
+    "end": 1.48,
+    "id": "w4"
+  },
+  {
+    "text": "your",
+    "start": 1.48,
+    "end": 1.73,
+    "id": "w5"
+  },
+  {
+    "text": "way.",
+    "start": 1.73,
+    "end": 2,
+    "id": "w6"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "text": "but",
+    "start": 0.04,
+    "end": 0.19,
+    "id": "w0"
+  },
+  {
+    "text": "there",
+    "start": 0.19,
+    "end": 0.45,
+    "id": "w1"
+  },
+  {
+    "text": "are",
+    "start": 0.53,
+    "end": 0.71,
+    "id": "w2"
+  },
+  {
+    "text": "barriers",
+    "start": 0.71,
+    "end": 1.23,
+    "id": "w3"
+  },
+  {
+    "text": "in",
+    "start": 1.23,
+    "end": 1.36,
+    "id": "w4"
+  },
+  {
+    "text": "my",
+    "start": 1.36,
+    "end": 1.49,
+    "id": "w5"
+  },
+  {
+    "text": "way.",
+    "start": 1.49,
+    "end": 1.71,
+    "id": "w6"
+  }
+]

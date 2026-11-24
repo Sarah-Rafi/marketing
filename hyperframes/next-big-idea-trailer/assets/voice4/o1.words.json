@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Ever",
+    "start": 0.13,
+    "end": 0.38,
+    "id": "w0"
+  },
+  {
+    "text": "have",
+    "start": 0.38,
+    "end": 0.76,
+    "id": "w1"
+  },
+  {
+    "text": "an",
+    "start": 0.76,
+    "end": 0.95,
+    "id": "w2"
+  },
+  {
+    "text": "idea,",
+    "start": 0.95,
+    "end": 1.45,
+    "id": "w3"
+  },
+  {
+    "text": "but",
+    "start": 1.5,
+    "end": 1.59,
+    "id": "w4"
+  },
+  {
+    "text": "don't",
+    "start": 1.63,
+    "end": 1.82,
+    "id": "w5"
+  },
+  {
+    "text": "know",
+    "start": 1.82,
+    "end": 2.01,
+    "id": "w6"
+  },
+  {
+    "text": "where",
+    "start": 2.01,
+    "end": 2.25,
+    "id": "w7"
+  },
+  {
+    "text": "to",
+    "start": 2.25,
+    "end": 2.34,
+    "id": "w8"
+  },
+  {
+    "text": "start?",
+    "start": 2.34,
+    "end": 2.65,
+    "id": "w9"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Between",
+    "start": 0.04,
+    "end": 0.33,
+    "id": "w0"
+  },
+  {
+    "text": "appointments,",
+    "start": 0.39,
+    "end": 1.16,
+    "id": "w1"
+  },
+  {
+    "text": "patients",
+    "start": 1.16,
+    "end": 1.6,
+    "id": "w2"
+  },
+  {
+    "text": "are",
+    "start": 1.6,
+    "end": 1.76,
+    "id": "w3"
+  },
+  {
+    "text": "still",
+    "start": 1.76,
+    "end": 2.03,
+    "id": "w4"
+  },
+  {
+    "text": "navigating",
+    "start": 2.03,
+    "end": 2.58,
+    "id": "w5"
+  },
+  {
+    "text": "their",
+    "start": 2.58,
+    "end": 2.85,
+    "id": "w6"
+  },
+  {
+    "text": "daily",
+    "start": 2.85,
+    "end": 3.12,
+    "id": "w7"
+  },
+  {
+    "text": "challenges.",
+    "start": 3.12,
+    "end": 3.74,
+    "id": "w8"
+  }
+]

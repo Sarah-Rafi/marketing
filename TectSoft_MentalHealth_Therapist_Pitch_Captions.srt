@@ -1,131 +1,139 @@
 1
-00:00:00,580 --> 00:00:02,170
-Therapist: I see each of my patients
+00:00:00,500 --> 00:00:02,370
+Psychiatrist: I’m a psychiatrist.
 
 2
-00:00:02,220 --> 00:00:03,780
-Therapist: for one hour a week.
+00:00:02,270 --> 00:00:04,340
+Psychiatrist: I want to help as many people as I can.
 
 3
-00:00:04,060 --> 00:00:06,960
-Therapist: The other one hundred and sixty-seven hours,
+00:00:04,840 --> 00:00:06,610
+Psychiatrist: But there are barriers in my way.
 
 4
-00:00:06,920 --> 00:00:08,180
-Therapist: I’m in the dark.
+00:00:07,060 --> 00:00:08,670
+TECTSOFT is here to help.
 
 5
-00:00:08,650 --> 00:00:10,500
-Therapist: Did they do their exercises?
+00:00:09,780 --> 00:00:11,370
+Psychiatrist: I see each of my patients
 
 6
-00:00:10,430 --> 00:00:11,660
-Therapist: Take their meds?
+00:00:11,420 --> 00:00:12,980
+Psychiatrist: for one hour a week.
 
 7
-00:00:11,610 --> 00:00:13,280
-Therapist: Was Tuesday a bad day?
+00:00:13,260 --> 00:00:16,160
+Psychiatrist: The other one hundred and sixty-seven hours,
 
 8
-00:00:13,470 --> 00:00:15,140
-Therapist: I only find out a week later.
+00:00:16,120 --> 00:00:17,380
+Psychiatrist: I’m in the dark.
 
 9
-00:00:16,260 --> 00:00:17,940
-Therapist: My calendar is full.
+00:00:19,260 --> 00:00:20,940
+Psychiatrist: My calendar is full.
 
 10
-00:00:17,890 --> 00:00:19,610
-Therapist: New patients wait for weeks.
+00:00:20,890 --> 00:00:22,610
+Psychiatrist: New patients wait for weeks.
 
 11
-00:00:20,310 --> 00:00:24,140
-Therapist: And at 4 a.m., a patient messages me, panicking.
+00:00:23,310 --> 00:00:27,140
+Psychiatrist: And at 4 a.m., a patient messages me, panicking.
 
 12
-00:00:24,040 --> 00:00:25,080
-Therapist: I want to help.
+00:00:27,040 --> 00:00:28,080
+Psychiatrist: I want to help.
 
 13
-00:00:25,120 --> 00:00:27,110
-Therapist: I just can’t be awake for everyone.
+00:00:28,120 --> 00:00:30,110
+Psychiatrist: I just can’t be awake for everyone.
 
 14
-00:00:27,460 --> 00:00:30,380
-Therapist: I need something that’s there for them between sessions,
+00:00:30,610 --> 00:00:33,110
+Psychiatrist: It’s all too much for one person to manage.
 
 15
-00:00:30,660 --> 00:00:31,960
-Therapist: and keeps me in the loop.
+00:00:34,540 --> 00:00:35,360
+With TECTSOFT,
 
 16
-00:00:32,550 --> 00:00:33,600
-Now there is.
+00:00:35,260 --> 00:00:37,100
+your care doesn’t stop at the session.
 
 17
-00:00:36,050 --> 00:00:37,610
+00:00:38,250 --> 00:00:39,810
 Your own practice app.
 
 18
-00:00:37,510 --> 00:00:38,880
+00:00:39,710 --> 00:00:41,080
 Patients check in every day:
 
 19
-00:00:38,930 --> 00:00:40,600
+00:00:41,130 --> 00:00:42,800
 mood, sleep, and anxiety.
 
 20
-00:00:41,220 --> 00:00:43,480
-Every exercise you assign is tracked,
+00:00:43,540 --> 00:00:45,930
+Daily nudges build healthy habits:
 
 21
-00:00:43,430 --> 00:00:45,440
-so you see their progress before they walk in.
+00:00:45,830 --> 00:00:48,220
+journaling, walks, exercise, and better meals.
 
 22
-00:00:46,050 --> 00:00:49,220
-At 4 a.m., AI guides them through the moment,
+00:00:49,820 --> 00:00:52,080
+Every exercise you assign is tracked,
 
 23
-00:00:49,120 --> 00:00:50,940
-with the coping steps you’ve approved.
+00:00:52,030 --> 00:00:54,040
+so you see their progress before they walk in.
 
 24
-00:00:51,240 --> 00:00:53,580
-Warning signs reach you right away,
+00:00:54,650 --> 00:00:57,820
+At 4 a.m., AI guides them through the moment,
 
 25
-00:00:53,480 --> 00:00:55,820
-and crisis support is always one tap away.
+00:00:57,720 --> 00:00:59,540
+with the coping steps you’ve approved.
 
 26
-00:00:56,420 --> 00:00:57,940
-Even people on your waitlist
+00:00:59,840 --> 00:01:02,180
+Warning signs reach you right away,
 
 27
-00:00:57,840 --> 00:00:59,380
-get support while they wait.
+00:01:02,080 --> 00:01:04,420
+and crisis support is always one tap away.
 
 28
-00:00:59,660 --> 00:01:01,780
-Therapist: Now I walk into every session,
+00:01:05,020 --> 00:01:06,540
+Even people on your waitlist
 
 29
-00:01:01,680 --> 00:01:03,700
-Therapist: knowing how their week really went.
+00:01:06,440 --> 00:01:07,980
+get support while they wait.
 
 30
-00:01:04,510 --> 00:01:06,900
-Therapist, psychiatrist, or clinic?
+00:01:08,300 --> 00:01:10,270
+Psychiatrist: Now I can help more people,
 
 31
-00:01:06,800 --> 00:01:08,370
-Reach out to us.
+00:01:10,210 --> 00:01:12,360
+Psychiatrist: and I know how their week really went.
 
 32
-00:01:08,270 --> 00:01:09,460
-Let’s build your app together,
+00:01:13,110 --> 00:01:15,500
+Therapist, psychiatrist, or clinic?
 
 33
-00:01:09,470 --> 00:01:11,460
+00:01:15,400 --> 00:01:16,970
+Reach out to us.
+
+34
+00:01:16,870 --> 00:01:18,060
+Let’s build your app together,
+
+35
+00:01:18,070 --> 00:01:20,060
 and help more people, every single day.

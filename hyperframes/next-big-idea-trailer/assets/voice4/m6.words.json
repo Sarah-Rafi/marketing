@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Your",
+    "start": 0.07,
+    "end": 0.29,
+    "id": "w0"
+  },
+  {
+    "text": "vision,",
+    "start": 0.32,
+    "end": 0.93,
+    "id": "w1"
+  },
+  {
+    "text": "our",
+    "start": 0.93,
+    "end": 1.16,
+    "id": "w2"
+  },
+  {
+    "text": "technology.",
+    "start": 1.16,
+    "end": 1.96,
+    "id": "w3"
+  },
+  {
+    "text": "Let's",
+    "start": 2.02,
+    "end": 2.19,
+    "id": "w4"
+  },
+  {
+    "text": "build",
+    "start": 2.28,
+    "end": 2.57,
+    "id": "w5"
+  },
+  {
+    "text": "it",
+    "start": 2.57,
+    "end": 2.68,
+    "id": "w6"
+  },
+  {
+    "text": "together.",
+    "start": 2.69,
+    "end": 3.36,
+    "id": "w7"
+  }
+]

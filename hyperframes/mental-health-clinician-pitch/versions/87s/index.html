@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --night: #142225;
+        --teal: #1e3236;
+        --ink: #e8eee9;
+        --apricot: #f2a97e;
+        --sage: #8fb09a;
+        --sand: #efe4d4;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--night);
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: var(--night);
+      }
+      #fx-vignette {
+        position: absolute;
+        inset: 0;
+        z-index: 40;
+        pointer-events: none;
+        background: radial-gradient(ellipse 80% 75% at 50% 48%, transparent 62%, rgba(0, 0, 0, 0.32) 100%);
+      }
+      #fx-grain {
+        position: absolute;
+        inset: -200px;
+        z-index: 41;
+        pointer-events: none;
+        opacity: 0.05;
+        mix-blend-mode: overlay;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='23' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>");
+        background-size: 300px 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TECTSOFT — psychiatrist pitch (87 s). Earlier cut: versions/76s/. -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="87" data-width="1920" data-height="1080">
+      <div id="hook" data-composition-id="hook" data-composition-src="compositions/hook.html" data-start="0" data-duration="9.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="week" data-composition-id="week" data-composition-src="compositions/week.html" data-start="9.2" data-duration="8.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="office" data-composition-id="office" data-composition-src="compositions/office.html" data-start="17.6" data-duration="16.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="dawn" data-composition-id="dawn" data-composition-src="compositions/dawn.html" data-start="34.2" data-duration="3.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="checkin" data-composition-id="checkin" data-composition-src="compositions/checkin.html" data-start="38" data-duration="5.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="habits" data-composition-id="habits" data-composition-src="compositions/habits.html" data-start="43.2" data-duration="6.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="dashboard" data-composition-id="dashboard" data-composition-src="compositions/dashboard.html" data-start="49.6" data-duration="4.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="aiguide" data-composition-id="aiguide" data-composition-src="compositions/aiguide.html" data-start="54.4" data-duration="5.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="alert" data-composition-id="alert" data-composition-src="compositions/alert.html" data-start="59.6" data-duration="5.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="waitlist" data-composition-id="waitlist" data-composition-src="compositions/waitlist.html" data-start="64.8" data-duration="3.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="session" data-composition-id="session" data-composition-src="compositions/session.html" data-start="68" data-duration="4.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="city" data-composition-id="city" data-composition-src="compositions/city.html" data-start="72.8" data-duration="7.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="endcard" data-composition-id="endcard" data-composition-src="compositions/endcard.html" data-start="80.4" data-duration="6.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <!-- overwhelmed calendar, over the therapist's office -->
+      <div id="calendar" data-composition-id="calendar" data-composition-src="compositions/calendar.html" data-start="19" data-duration="4" data-track-index="2" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <!-- 4 a.m. message, over the therapist's office -->
+      <div id="night" data-composition-id="night" data-composition-src="compositions/night.html" data-start="23" data-duration="7.2" data-track-index="2" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="87" data-track-index="3" data-track-kind="captions" data-width="1920" data-height="1080" style="z-index: 50"></div>
+
+      <div id="fx-vignette" class="clip" data-start="0" data-duration="87" data-track-index="4"></div>
+      <div id="fx-grain" class="clip" data-start="0" data-duration="87" data-track-index="4"></div>
+
+      <!-- Psychiatrist: Kokoro-82M am_michael. Narrator: bf_emma. Script: scripts/narration.tsv -->
+      <audio id="vo-h1" src="assets/voice/h1.wav" data-start="0.4" data-duration="4.10" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-h2" src="assets/voice/h2.wav" data-start="4.8" data-duration="1.83" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-h3" src="assets/voice/h3.wav" data-start="7" data-duration="1.71" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-t1" src="assets/voice/t1.wav" data-start="9.7" data-duration="3.20" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-t2" src="assets/voice/t2.wav" data-start="13.2" data-duration="3.95" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-t5" src="assets/voice/t5.wav" data-start="19.2" data-duration="3.41" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-t6" src="assets/voice/t6.wav" data-start="23.2" data-duration="6.85" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-p4" src="assets/voice/p4.wav" data-start="30.5" data-duration="2.58" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-d1" src="assets/voice/d1.wav" data-start="34.5" data-duration="2.52" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-n2" src="assets/voice/n2.wav" data-start="38.2" data-duration="4.50" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-hb" src="assets/voice/hb.wav" data-start="43.5" data-duration="4.71" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-n3" src="assets/voice/n3.wav" data-start="49.8" data-duration="4.22" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-n4" src="assets/voice/n4.wav" data-start="54.6" data-duration="4.89" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-n5" src="assets/voice/n5.wav" data-start="59.8" data-duration="4.54" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-n6" src="assets/voice/n6.wav" data-start="65" data-duration="2.92" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-s1" src="assets/voice/s1.wav" data-start="68.25" data-duration="4.10" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-n7" src="assets/voice/n7.wav" data-start="73" data-duration="7.08" data-track-index="10" data-volume="1.5"></audio>
+      <!-- Original score + effects, synthesised by scripts/score.py -->
+      <audio id="music" src="assets/music/score.wav" data-start="0" data-duration="87" data-volume="1" data-track-index="11"></audio>
+      <audio id="sfx" src="assets/sfx/sfx.wav" data-start="0" data-duration="87" data-volume="0.7" data-track-index="12"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      // Film grain: jump the noise tile 12 times a second (stepped, deterministic).
+      const grainSteps = 1044;
+      tl.fromTo(
+        "#fx-grain",
+        { x: 0, y: 0 },
+        {
+          keyframes: Array.from({ length: grainSteps }, (_, i) => ({
+            x: ((i * 137) % 200) - 100,
+            y: ((i * 89) % 200) - 100,
+            duration: 87 / grainSteps,
+            ease: "steps(1)",
+          })),
+        },
+        0,
+      );
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

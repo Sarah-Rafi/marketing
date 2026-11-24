@@ -1,0 +1,116 @@
+[
+  {
+    "text": "but",
+    "start": 0.04,
+    "end": 0.23,
+    "id": "w0"
+  },
+  {
+    "text": "the",
+    "start": 0.36,
+    "end": 0.46,
+    "id": "w1"
+  },
+  {
+    "text": "first",
+    "start": 0.46,
+    "end": 0.84,
+    "id": "w2"
+  },
+  {
+    "text": "step",
+    "start": 0.96,
+    "end": 1.15,
+    "id": "w3"
+  },
+  {
+    "text": "isn't",
+    "start": 1.15,
+    "end": 1.51,
+    "id": "w4"
+  },
+  {
+    "text": "what",
+    "start": 1.56,
+    "end": 1.78,
+    "id": "w5"
+  },
+  {
+    "text": "to",
+    "start": 1.87,
+    "end": 1.95,
+    "id": "w6"
+  },
+  {
+    "text": "build.",
+    "start": 1.95,
+    "end": 2.48,
+    "id": "w7"
+  },
+  {
+    "text": "It's",
+    "start": 2.48,
+    "end": 2.69,
+    "id": "w8"
+  },
+  {
+    "text": "the",
+    "start": 2.8,
+    "end": 2.9,
+    "id": "w9"
+  },
+  {
+    "text": "problem",
+    "start": 2.9,
+    "end": 3.28,
+    "id": "w10"
+  },
+  {
+    "text": "you're",
+    "start": 3.4,
+    "end": 3.75,
+    "id": "w11"
+  },
+  {
+    "text": "solving",
+    "start": 3.82,
+    "end": 4.22,
+    "id": "w12"
+  },
+  {
+    "text": "and",
+    "start": 4.32,
+    "end": 4.46,
+    "id": "w13"
+  },
+  {
+    "text": "who",
+    "start": 4.46,
+    "end": 4.48,
+    "id": "w14"
+  },
+  {
+    "text": "you're",
+    "start": 4.64,
+    "end": 4.93,
+    "id": "w15"
+  },
+  {
+    "text": "solving",
+    "start": 5.01,
+    "end": 5.42,
+    "id": "w16"
+  },
+  {
+    "text": "it",
+    "start": 5.42,
+    "end": 5.54,
+    "id": "w17"
+  },
+  {
+    "text": "for.",
+    "start": 5.54,
+    "end": 5.92,
+    "id": "w18"
+  }
+]

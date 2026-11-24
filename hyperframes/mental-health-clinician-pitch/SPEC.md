@@ -1,24 +1,30 @@
-# SPEC — "Care that doesn't stop at the session." (76.2 s, therapist version)
+# SPEC — "Care doesn't end when the session does." (65.4 s)
 
-GOAL:    Therapists, psychiatrists and clinics see their own daily problem (1 hour a week with each patient, 167 hours blind, booked out, 4 a.m. messages), see what their own app would do, and reach out to TectSoft to build it.
-OUTPUT:  HyperFrames, 1920 x 1080, 30 fps, MP4. 76.2 s. Sister of ../mental-health-pitch (two-friends version, untouched).
-VOICES:  Therapist `am_michael`, narrator `bf_emma` (Kokoro). Score: original, calm, 76 bpm from 35.8 s.
-LOOK:    Night teal (problem) → dawn apricot (solution); sage, sand. Faceless paper-cut people. Nunito 900 titles.
+GOAL:    Psychiatrists, psychologists, therapists, counsellors and clinics see that a practice app can keep patients
+         connected between appointments, organise check-ins and progress, and give them more time for care, without
+         replacing the person at the centre. TECTSOFT builds it. Structure: call-out → stuck → one problems list → TECTSOFT is here to help →
+         solution → benefits → TECTSOFT.
+OUTPUT:  HyperFrames, 1920 x 1080, 30 fps, MP4. 65.4 s. Earlier cuts: versions/72s/, versions/87s/ (psychiatrist), versions/76s/.
+VOICE:   One narrator, Kokoro `bf_emma`, assets/voice2/. Script: scripts/narration.tsv. Score: original, calm, 76 bpm from 21 s.
+LOOK:    Night teal (between sessions) → dawn apricot (the app); sage, sand. Faceless paper-cut people. Nunito 900 titles.
 
 SHOTS:
-1. 0–8.4 Week grid, 168 hours: one lit ("1 hour with me"), "167 HOURS ON THEIR OWN."
-2. 8.4–32.2 Therapist alone after hours, empty patient chair; "Between sessions" card: exercise ? meds ? Tuesday's mood ? → "Next session · in 7 days".
-   16.0–20.0 overlay: fully booked calendar, new patients waiting for a slot.
-   20.0–27.2 overlay: 4:02 a.m., patient messages pile up on the therapist's phone.
-   Camera leaves through the window on "…keeps me in the loop".
-3. 32.2–35.8 Dawn: "Now there is." → "CARE THAT DOESN'T STOP AT THE SESSION."
-4. 35.8–41.0 Patient's daily check-in (mood, sleep, anxiety) in "YOUR LOGO" app → shared with the therapist.
-5. 41.0–45.8 Clinician dashboard: assigned exercises tracked by day, mood line, "Ready before they walk in".
-6. 45.8–51.0 4:02 a.m., AI guide walks the patient through the therapist's approved coping steps; crisis line on screen.
-7. 51.0–56.2 Split: therapist alerts (low mood 3 days, missed medication) | patient's one-tap crisis support.
-8. 56.2–59.4 Waitlist: support starts today, not in weeks.
-9. 59.4–64.2 Daylight session, therapist + patient, "Their week, at a glance".
-10. 64.2–71.8 Skyline: "Therapist, psychiatrist or clinic?" → "Let's build your app together." Windows light up.
-11. 71.8–76.2 End card: TectSoft · "Apps for therapists, psychiatrists and clinics." · "Reach out to us."
+1. 0–8.4 Hook: night skyline. "PSYCHIATRIST? THERAPIST? CLINIC OWNER?" from frame 0, each role lights as named →
+   "HERE TO MAKE A REAL DIFFERENCE IN MENTAL HEALTH." (every window lights up) → "BUT YOU KEEP GETTING STUCK."
+   (striped barriers drop, windows go dark).
+2. 8.4–14.4 Clinician alone. "And the problems keep coming your way." One "Where you get stuck" card: five problems, each with an
+   illustration (clock, unclear chart, scattered notes, lost message, growing queue), lit as it lands, all kept on screen.
+   Camera leaves through the window.
+3. 14.4–21.0 Dawn: logo + "TECTSOFT IS HERE TO HELP." → "ONE CONNECTED SPACE." / "Care doesn't end when the session does."
+4. 21.0–26.0 "YOUR OWN APP." → "DAILY CHECK-INS." (mood, sleep, anxiety; shared with your clinician).
+5. 26.0–30.8 "HABIT TRACKING.": walk nudge; journal, walk, exercise, better meals, mind break ticked; journal note; week streak.
+6. 30.8–35.0 "STAY CONNECTED.": from your clinician: a message, sleep guide, breathing audio (resources.html).
+7. 35.0–40.0 Progress insights dashboard: habits by day, mood line, next session.
+8. 40.0–50.0 Daylight session. "With your own app: more connection, better visibility, more time for care. Your care stays at the centre."
+9. 50.0–59.4 Skyline: logo, TECTSOFT, "Digital solutions for mental health professionals." → "Let's build your app together." Windows light up.
+10. 59.4–65.4 End card (approved TECTSOFT layout): logo, TECTSOFT, YOUR PRACTICE. YOUR APP., "A more connected care journey.",
+    typed tectsoft.com, hello@tectsoft.com, START YOUR PROJECT →.
 
-BANNED: any claim the app/AI treats, diagnoses or replaces the clinician; AI acting without clinician-approved content; invented results, clients or statistics; faces with expressions.
+BANNED: any claim the app/AI diagnoses, treats or replaces professional care; AI or crisis features (not confirmed in the product);
+invented results, clients, statistics or integrations; health claims for the habits; faces with expressions.
+Unused scenes from the earlier cuts (calendar, 4 a.m., AI guide, alerts, waitlist) are in versions/87s/unused/.

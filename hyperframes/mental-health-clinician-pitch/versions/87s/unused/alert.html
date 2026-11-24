@@ -1,0 +1,147 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: radial-gradient(ellipse 70% 70% at 50% 40%, #f6e9d8 0%, #ead8c2 100%);
+      font-family: "Nunito", sans-serif;
+      color: #1e3236;
+    }
+    .al-col {
+      position: absolute;
+      top: 70px;
+      width: 440px;
+    }
+    #al-you {
+      left: 380px;
+    }
+    #al-pat {
+      left: 1100px;
+    }
+    .al-label {
+      text-align: center;
+      font-weight: 900;
+      font-size: 40px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .al-phone {
+      position: relative;
+      width: 440px;
+      height: 820px;
+      border-radius: 64px;
+      background: #0b1214;
+      border: 8px solid #3b5155;
+      box-shadow: 0 40px 90px rgba(60, 40, 20, 0.3);
+    }
+    .al-screen {
+      position: absolute;
+      inset: 12px;
+      border-radius: 50px;
+      overflow: hidden;
+      background: #fbf6ee;
+      padding: 60px 24px 24px;
+    }
+    .al-h {
+      font-weight: 800;
+      font-size: 38px;
+    }
+    .al-sub {
+      font-weight: 600;
+      font-size: 28px;
+      color: rgba(30, 50, 54, 0.7);
+      margin-top: 4px;
+    }
+    .al-card {
+      margin-top: 26px;
+      padding: 20px 22px;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: 0 6px 18px rgba(60, 40, 20, 0.08);
+      border-left: 10px solid #f2a97e;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+    .al-card small {
+      display: block;
+      margin-top: 6px;
+      font-weight: 600;
+      font-size: 28px;
+      color: rgba(30, 50, 54, 0.75);
+    }
+    .al-btn {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 18px;
+      border-radius: 12px;
+      background: #1e3236;
+      color: #e8eee9;
+      font-weight: 800;
+      font-size: 28px;
+    }
+    #al-sos {
+      position: relative;
+      margin-top: 60px;
+      padding: 34px 26px;
+      border-radius: 30px;
+      background: #f2a97e;
+      text-align: center;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 1.15;
+    }
+    #al-sos small {
+      display: block;
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    #al-tap {
+      position: absolute;
+      right: -44px;
+      bottom: -64px;
+      width: 110px;
+      height: 110px;
+      border-radius: 60px;
+      border: 6px solid #1e3236;
+    }
+  </style>
+  <div id="root" data-composition-id="alert" data-width="1920" data-height="1080">
+    <div id="al-you" class="al-col">
+      <div class="al-label">You</div>
+      <div class="al-phone">
+        <div class="al-screen">
+          <div class="al-h">Alerts</div>
+          <div class="al-sub">From daily check-ins</div>
+          <div id="al-a1" class="al-card">Low mood, 3 days in a row<small>Your patient</small><span class="al-btn">Review</span></div>
+          <div id="al-a2" class="al-card">Missed medication<small>Another patient</small><span class="al-btn">Review</span></div>
+        </div>
+      </div>
+    </div>
+    <div id="al-pat" class="al-col">
+      <div class="al-label">Your patient</div>
+      <div class="al-phone">
+        <div class="al-screen">
+          <div class="al-h">Need help now?</div>
+          <div class="al-sub">You’re not alone.</div>
+          <div id="al-sos">Crisis support<small>Talk to someone now</small><div id="al-tap"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // "Warning signs reach you right away" (0.24–2.48): alerts land on the therapist's phone.
+    tl.fromTo("#al-you", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0);
+    tl.fromTo("#al-a1", { opacity: 0, y: -30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.75);
+    tl.fromTo("#al-a2", { opacity: 0, y: -30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 1.55);
+    // "and crisis support is always one tap away" (2.48–4.72).
+    tl.fromTo("#al-pat", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.35);
+    tl.fromTo("#al-sos", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 2.9);
+    tl.fromTo("#al-tap", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.25, ease: "power2.out" }, 4.15);
+    window.__timelines["alert"] = tl;
+  </script>
+</template>

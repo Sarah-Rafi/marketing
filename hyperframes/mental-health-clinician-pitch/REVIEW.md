@@ -13,3 +13,32 @@
 - Voices are free AI voices (Kokoro). A real clinician's voice would be stronger for this audience.
 - End card is text "TectSoft"; needs the real logo and contact.
 - Scenes 4–8 move fast (about 5 s each); a 30 s cut for Reels could keep 1, 2, 5, 6, 10, 11.
+
+## Round 2 — psychiatrist version (87 s), 2026-11-24
+- Feedback: dry start; the viewer didn't know who was speaking; the problem lines were too specific (exercise? meds? Tuesday?); the app needed more features and visuals.
+- New hook: he says who he is ("I'm a psychiatrist. I want to help as many people as I can. But there are barriers."), and TECTSOFT answers ("is here to help") in the first 9 s.
+- Problems are now general: week grid, full calendar, 4 a.m. messages, then a "What's in my way" card and "It's all too much for one person to manage."
+- New healthy-habits scene: journaling, walk, exercise, better meals, mind break. No health claims are made for them.
+- End card is now the approved TECTSOFT layout with logo, typed tectsoft.com and hello@tectsoft.com. Transitions now use the glass sweep instead of whooshes.
+- Reused voice lines: t1, t2, t5, t6, n2–n7. New lines: h1, h2, h3, p4, d1, hb, s1. Nobody has listened to them yet.
+- `check`: 0 errors; the remaining warnings are the app-screen glances (line_unread), as before.
+
+## Round 3 — "Care doesn't end when the session does" (69.4 s), 2026-11-24
+- Rebuilt on the client brief: one narrator, broad audience (psychiatrists, psychologists, therapists, counsellors, clinics), structure hook → challenge → opportunity → solution → benefits → TECTSOFT.
+- Cut: the first-person psychiatrist, the calendar, the 4 a.m. messages, the AI guide, the alerts/crisis support and the waitlist. The brief says not to show AI or crisis features unless they are confirmed.
+- The four problem statements and the three benefits build up one by one, and earlier lines stay on screen.
+- The four features each have their own screen title (daily check-ins, habit tracking, stay connected, progress insights). They are not a single list kept on screen.
+- Length is 69.4 s, against the brief's 60–65 s. The narration runs about 50 s at natural pace.
+- `check`: 0 errors. Two warnings remain for phone screens that are glances (habits and resources).
+- The full render was blocked: the renderer needs 1 GB free and the disk had about 0.98 GB.
+
+## Round 4: call-out opening (72.4 s), 2026-11-24
+- The opening now addresses the viewer: "Are you a psychiatrist, a therapist, or a clinic owner, here to make a real difference in mental health? But you keep getting stuck." Barriers drop on "stuck", then the problems follow.
+- "TECTSOFT is here to help" comes after the problems, at dawn, followed by "With one connected space, care doesn't end when the session does."
+- The brief's opportunity line ("What if you had one digital space…") is replaced by that line.
+- `check`: 0 errors and 2 glance warnings, as before. Rendered at 72.4 s, −14.1 LUFS, peak −1.0 dBFS. Nobody has listened to it yet.
+
+## Round 5: one problems screen (65.4 s), 2026-11-24
+- "But you keep getting stuck." is followed by "And the problems keep coming your way." over one card listing five illustrated problems, lit in turn and all kept on screen. Nobody explains the problems one by one any more.
+- Cut: the week grid and the two problem voice lines. The scene is in versions/72s/week.html.
+- `check`: 0 errors and 2 glance warnings. Rendered at 65.4 s, −14.2 LUFS, peak −1.0 dBFS. Nobody has listened to the new line yet.

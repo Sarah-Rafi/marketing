@@ -1,0 +1,44 @@
+[
+  {
+    "text": "Bring",
+    "start": 0.09,
+    "end": 0.41,
+    "id": "w0"
+  },
+  {
+    "text": "your",
+    "start": 0.41,
+    "end": 0.74,
+    "id": "w1"
+  },
+  {
+    "text": "idea",
+    "start": 0.74,
+    "end": 1.07,
+    "id": "w2"
+  },
+  {
+    "text": "to",
+    "start": 1.07,
+    "end": 1.23,
+    "id": "w3"
+  },
+  {
+    "text": "TechSoft.",
+    "start": 1.23,
+    "end": 2.08,
+    "id": "w4"
+  },
+  {
+    "text": "Let's",
+    "start": 2.13,
+    "end": 2.43,
+    "id": "w5"
+  },
+  {
+    "text": "talk.",
+    "start": 2.43,
+    "end": 2.78,
+    "id": "w6"
+  }
+]

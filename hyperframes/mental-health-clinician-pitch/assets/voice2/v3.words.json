@@ -1,0 +1,74 @@
+[
+  {
+    "text": "and",
+    "start": 0.03,
+    "end": 0.17,
+    "id": "w0"
+  },
+  {
+    "text": "keeping",
+    "start": 0.18,
+    "end": 0.57,
+    "id": "w1"
+  },
+  {
+    "text": "track",
+    "start": 0.57,
+    "end": 0.83,
+    "id": "w2"
+  },
+  {
+    "text": "of",
+    "start": 0.96,
+    "end": 0.97,
+    "id": "w3"
+  },
+  {
+    "text": "progress,",
+    "start": 0.97,
+    "end": 1.52,
+    "id": "w4"
+  },
+  {
+    "text": "check-ins",
+    "start": 1.63,
+    "end": 2.26,
+    "id": "w5"
+  },
+  {
+    "text": "and",
+    "start": 2.28,
+    "end": 2.46,
+    "id": "w6"
+  },
+  {
+    "text": "ongoing",
+    "start": 2.46,
+    "end": 2.87,
+    "id": "w7"
+  },
+  {
+    "text": "communication",
+    "start": 2.91,
+    "end": 3.61,
+    "id": "w8"
+  },
+  {
+    "text": "can",
+    "start": 3.76,
+    "end": 3.9,
+    "id": "w9"
+  },
+  {
+    "text": "be",
+    "start": 3.9,
+    "end": 3.98,
+    "id": "w10"
+  },
+  {
+    "text": "difficult.",
+    "start": 4.02,
+    "end": 4.6,
+    "id": "w11"
+  }
+]

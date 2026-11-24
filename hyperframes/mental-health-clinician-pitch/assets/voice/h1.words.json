@@ -1,0 +1,80 @@
+[
+  {
+    "text": "I'm",
+    "start": 0.1,
+    "end": 0.3,
+    "id": "w0"
+  },
+  {
+    "text": "a",
+    "start": 0.3,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "psychiatrist.",
+    "start": 0.4,
+    "end": 1.87,
+    "id": "w2"
+  },
+  {
+    "text": "I",
+    "start": 1.87,
+    "end": 1.92,
+    "id": "w3"
+  },
+  {
+    "text": "want",
+    "start": 1.93,
+    "end": 2.18,
+    "id": "w4"
+  },
+  {
+    "text": "to",
+    "start": 2.18,
+    "end": 2.32,
+    "id": "w5"
+  },
+  {
+    "text": "help",
+    "start": 2.32,
+    "end": 2.57,
+    "id": "w6"
+  },
+  {
+    "text": "as",
+    "start": 2.57,
+    "end": 2.7,
+    "id": "w7"
+  },
+  {
+    "text": "many",
+    "start": 2.7,
+    "end": 2.97,
+    "id": "w8"
+  },
+  {
+    "text": "people",
+    "start": 2.97,
+    "end": 3.36,
+    "id": "w9"
+  },
+  {
+    "text": "as",
+    "start": 3.36,
+    "end": 3.48,
+    "id": "w10"
+  },
+  {
+    "text": "I",
+    "start": 3.48,
+    "end": 3.56,
+    "id": "w11"
+  },
+  {
+    "text": "can.",
+    "start": 3.56,
+    "end": 3.84,
+    "id": "w12"
+  }
+]

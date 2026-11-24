@@ -1,0 +1,68 @@
+[
+  {
+    "text": "while",
+    "start": 0.04,
+    "end": 0.25,
+    "id": "w0"
+  },
+  {
+    "text": "you",
+    "start": 0.25,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "get",
+    "start": 0.4,
+    "end": 0.49,
+    "id": "w2"
+  },
+  {
+    "text": "a",
+    "start": 0.55,
+    "end": 0.58,
+    "id": "w3"
+  },
+  {
+    "text": "clearer",
+    "start": 0.61,
+    "end": 0.88,
+    "id": "w4"
+  },
+  {
+    "text": "view",
+    "start": 0.96,
+    "end": 1.16,
+    "id": "w5"
+  },
+  {
+    "text": "of",
+    "start": 1.16,
+    "end": 1.18,
+    "id": "w6"
+  },
+  {
+    "text": "their",
+    "start": 1.29,
+    "end": 1.51,
+    "id": "w7"
+  },
+  {
+    "text": "journey",
+    "start": 1.51,
+    "end": 1.86,
+    "id": "w8"
+  },
+  {
+    "text": "between",
+    "start": 1.91,
+    "end": 2.12,
+    "id": "w9"
+  },
+  {
+    "text": "appointments.",
+    "start": 2.12,
+    "end": 2.88,
+    "id": "w10"
+  }
+]

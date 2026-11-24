@@ -1,32 +1,92 @@
 [
   {
-    "text": "Traffic,",
-    "start": 0.03,
-    "end": 0.7,
+    "text": "But",
+    "start": 0.04,
+    "end": 0.21,
     "id": "w0"
   },
   {
-    "text": "crowded",
-    "start": 0.7,
-    "end": 1.24,
+    "text": "juggling",
+    "start": 0.21,
+    "end": 0.78,
     "id": "w1"
   },
   {
-    "text": "floors,",
-    "start": 1.25,
-    "end": 1.87,
+    "text": "clients,",
+    "start": 0.78,
+    "end": 1.44,
     "id": "w2"
   },
   {
-    "text": "no",
-    "start": 1.87,
-    "end": 2.02,
+    "text": "schedules,",
+    "start": 1.52,
+    "end": 2.3,
     "id": "w3"
   },
   {
-    "text": "time.",
-    "start": 2.02,
-    "end": 2.41,
+    "text": "workouts,",
+    "start": 2.32,
+    "end": 2.96,
     "id": "w4"
+  },
+  {
+    "text": "and",
+    "start": 2.96,
+    "end": 3.02,
+    "id": "w5"
+  },
+  {
+    "text": "progress",
+    "start": 3.06,
+    "end": 3.56,
+    "id": "w6"
+  },
+  {
+    "text": "across",
+    "start": 3.62,
+    "end": 3.93,
+    "id": "w7"
+  },
+  {
+    "text": "a",
+    "start": 3.98,
+    "end": 3.99,
+    "id": "w8"
+  },
+  {
+    "text": "dozen",
+    "start": 3.99,
+    "end": 4.29,
+    "id": "w9"
+  },
+  {
+    "text": "different",
+    "start": 4.29,
+    "end": 4.69,
+    "id": "w10"
+  },
+  {
+    "text": "apps",
+    "start": 5.03,
+    "end": 5.06,
+    "id": "w11"
+  },
+  {
+    "text": "holds",
+    "start": 5.11,
+    "end": 5.36,
+    "id": "w12"
+  },
+  {
+    "text": "you",
+    "start": 5.36,
+    "end": 5.54,
+    "id": "w13"
+  },
+  {
+    "text": "back.",
+    "start": 5.54,
+    "end": 5.98,
+    "id": "w14"
   }
 ]

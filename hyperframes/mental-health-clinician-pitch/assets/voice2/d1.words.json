@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Techsoft",
+    "start": 0.06,
+    "end": 0.53,
+    "id": "w0"
+  },
+  {
+    "text": "is",
+    "start": 0.64,
+    "end": 0.72,
+    "id": "w1"
+  },
+  {
+    "text": "here",
+    "start": 0.72,
+    "end": 1.01,
+    "id": "w2"
+  },
+  {
+    "text": "to",
+    "start": 1.01,
+    "end": 1.15,
+    "id": "w3"
+  },
+  {
+    "text": "help.",
+    "start": 1.15,
+    "end": 1.57,
+    "id": "w4"
+  }
+]

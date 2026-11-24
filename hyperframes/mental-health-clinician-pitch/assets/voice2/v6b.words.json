@@ -1,0 +1,44 @@
+[
+  {
+    "text": "Build",
+    "start": 0.08,
+    "end": 0.27,
+    "id": "w0"
+  },
+  {
+    "text": "healthy",
+    "start": 0.31,
+    "end": 0.7,
+    "id": "w1"
+  },
+  {
+    "text": "habits",
+    "start": 0.7,
+    "end": 1.05,
+    "id": "w2"
+  },
+  {
+    "text": "and",
+    "start": 1.05,
+    "end": 1.22,
+    "id": "w3"
+  },
+  {
+    "text": "record",
+    "start": 1.22,
+    "end": 1.57,
+    "id": "w4"
+  },
+  {
+    "text": "their",
+    "start": 1.57,
+    "end": 1.86,
+    "id": "w5"
+  },
+  {
+    "text": "progress.",
+    "start": 1.86,
+    "end": 2.36,
+    "id": "w6"
+  }
+]

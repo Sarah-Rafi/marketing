@@ -1,0 +1,131 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #0e1a1c;
+      font-family: "Nunito", sans-serif;
+    }
+    .bd-panel {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    #bd-wide svg {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+    #bd-wcam {
+      position: absolute;
+      inset: 0;
+      transform-origin: 470px 470px;
+    }
+    #bd-close {
+      background: #0b1416;
+    }
+    #bd-phone {
+      position: absolute;
+      left: 700px;
+      top: 70px;
+      width: 520px;
+      height: 1040px;
+      border-radius: 70px;
+      background: #070d0e;
+      border: 10px solid #22363a;
+    }
+    #bd-screen {
+      position: absolute;
+      inset: 14px;
+      border-radius: 56px;
+      background: #1b2b2e;
+      padding: 50px 26px;
+      overflow: hidden;
+    }
+    #bd-time {
+      text-align: center;
+      font-weight: 800;
+      font-size: 84px;
+      color: #e8eee9;
+      margin-bottom: 10px;
+    }
+    .bd-note {
+      margin-top: 18px;
+      padding: 20px 24px;
+      border-radius: 24px;
+      background: rgba(232, 238, 233, 0.92);
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 1.25;
+      color: #1e2a2c;
+    }
+    .bd-note b {
+      display: block;
+      font-weight: 800;
+      font-size: 28px;
+      color: #55707a;
+    }
+    #bd-hand {
+      position: absolute;
+      left: 740px;
+      top: 975px;
+      width: 440px;
+      height: 260px;
+      border-radius: 120px 120px 0 0;
+      background: #e2b49a;
+    }
+  </style>
+  <div id="root" data-composition-id="night" data-width="1920" data-height="1080">
+    <div id="bd-wide" class="bd-panel clip" data-start="0" data-duration="2.4">
+      <div id="bd-wcam">
+        <svg viewBox="0 0 1920 1080">
+          <rect x="1180" y="160" width="360" height="300" fill="#0a1214" />
+          <circle cx="1460" cy="230" r="22" fill="#e8eee9" opacity="0.6" />
+          <rect x="1180" y="160" width="360" height="300" fill="none" stroke="#1b2b2e" stroke-width="14" />
+          <rect y="780" width="1920" height="300" fill="#0b1517" />
+          <rect x="280" y="420" width="44" height="360" rx="10" fill="#1b2b2e" />
+          <rect x="300" y="640" width="1200" height="120" rx="14" fill="#1b2b2e" />
+          <rect x="320" y="590" width="1160" height="70" rx="22" fill="#2a3d41" />
+          <ellipse cx="430" cy="588" rx="110" ry="38" fill="#3a5055" />
+          <!-- the therapist, woken by their phone -->
+                    <circle cx="440" cy="548" r="38" fill="#e2b49a" />
+          <path d="M404 540 C396 500 440 486 470 500 C462 512 446 516 436 530 Z" fill="#3a241c" />
+          <path d="M470 600 C600 520 900 540 1100 556 C1300 572 1410 584 1450 600 L1450 642 L470 642 Z" fill="#4e6a6f" />
+          <path d="M520 590 L560 470 L512 430" fill="none" stroke="#e2b49a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+          <g transform="rotate(-24 480 420)"><rect x="444" y="360" width="72" height="128" rx="12" fill="#070d0e" /><rect x="450" y="366" width="60" height="116" rx="8" fill="#dce6e3" /></g>
+          <path d="M452 470 L404 540 L486 556 Z" fill="#dce6e3" opacity="0.12" />
+          <!-- nightstand clock -->
+          <rect x="100" y="620" width="160" height="160" rx="8" fill="#16272a" />
+          <rect x="110" y="548" width="140" height="70" rx="10" fill="#0a1214" />
+          <text id="bd-clock" x="180" y="600" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="46" fill="#e8eee9" opacity="0.85">4:02</text>
+        </svg>
+      </div>
+    </div>
+    <div id="bd-close" class="bd-panel clip" data-start="2.4" data-duration="4.8">
+      <div id="bd-phone">
+        <div id="bd-screen">
+          <div id="bd-time">4:02</div>
+          <div id="bd-n1" class="bd-note"><b>Patient</b>I’m panicking again. Are you awake?</div>
+          <div id="bd-n2" class="bd-note"><b>Patient</b>My heart is racing. I can’t sleep.</div>
+          <div id="bd-n3" class="bd-note"><b>Patient</b>Sorry it’s so late… can we talk?</div>
+          <div id="bd-n4" class="bd-note"><b>Patient</b>Feeling really low tonight.</div>
+        </div>
+      </div>
+      <div id="bd-hand"></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // "And at 4 a.m." (1.03): the clock, then the phone lights the room.
+    tl.fromTo("#bd-wcam", { scale: 1.0 }, { scale: 1.12, duration: 2.4, ease: "sine.inOut" }, 0);
+    tl.fromTo("#bd-clock", { opacity: 0.4 }, { opacity: 0.95, duration: 0.3, ease: "power1.out" }, 0.9);
+    // "a patient messages me, panicking" (2.0–4.0), then "I can't be awake for everyone" (5.1–7.0): more keep coming.
+    [["#bd-n1", 2.45], ["#bd-n2", 4.3], ["#bd-n3", 4.9], ["#bd-n4", 5.5]].forEach(([id, t]) =>
+      tl.fromTo(id, { opacity: 0, y: -30 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, t),
+    );
+    tl.fromTo("#bd-phone", { y: 30 }, { y: -10, duration: 4.8, ease: "sine.out" }, 2.4);
+    window.__timelines["night"] = tl;
+  </script>
+</template>

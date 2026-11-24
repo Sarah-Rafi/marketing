@@ -1,0 +1,74 @@
+[
+  {
+    "text": "technology",
+    "start": 0.07,
+    "end": 0.67,
+    "id": "w0"
+  },
+  {
+    "text": "that",
+    "start": 0.67,
+    "end": 0.93,
+    "id": "w1"
+  },
+  {
+    "text": "supports",
+    "start": 0.93,
+    "end": 1.46,
+    "id": "w2"
+  },
+  {
+    "text": "your",
+    "start": 1.46,
+    "end": 1.72,
+    "id": "w3"
+  },
+  {
+    "text": "practice,",
+    "start": 1.72,
+    "end": 2.37,
+    "id": "w4"
+  },
+  {
+    "text": "while",
+    "start": 2.37,
+    "end": 2.61,
+    "id": "w5"
+  },
+  {
+    "text": "keeping",
+    "start": 2.61,
+    "end": 2.93,
+    "id": "w6"
+  },
+  {
+    "text": "professional",
+    "start": 3.02,
+    "end": 3.54,
+    "id": "w7"
+  },
+  {
+    "text": "care",
+    "start": 3.54,
+    "end": 3.7,
+    "id": "w8"
+  },
+  {
+    "text": "at",
+    "start": 3.77,
+    "end": 3.8,
+    "id": "w9"
+  },
+  {
+    "text": "the",
+    "start": 3.82,
+    "end": 3.96,
+    "id": "w10"
+  },
+  {
+    "text": "centre.",
+    "start": 3.96,
+    "end": 4.36,
+    "id": "w11"
+  }
+]

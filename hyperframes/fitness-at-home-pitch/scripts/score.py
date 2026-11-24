@@ -1,4 +1,4 @@
-"""Original workout-pop score + sound effects for the fitness pitch, synthesised from scratch.
+"""Original electronic score + sound effects for the TECTSOFT fitness-coach ad, synthesised from scratch.
 
 Deterministic (seeded). No samples, no third-party music. Writes:
   assets/music/score.wav  (music bed, voice ducking baked in)
@@ -14,16 +14,16 @@ import wave
 import numpy as np
 
 SR = 48000
-DUR = 45.0
+DUR = 43.5
 N = int(SR * DUR)
 rng = np.random.default_rng(20261113)
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
 # Narration windows (absolute seconds) — must match index.html <audio> starts + durations.
-VOICE = [(0.4, 3.2), (4.0, 2.41), (7.0, 5.12), (12.6, 3.48), (19.2, 4.84), (24.5, 7.0), (32.0, 5.33), (38.0, 2.07), (41.6, 0.94)]
+VOICE = [(0.2, 7.21), (7.6, 5.85), (13.8, 3.22), (18.1, 6.29), (24.6, 6.76), (32.4, 2.26), (36.7, 4.5)]
 _html = open(os.path.join(ROOT, "index.html")).read()
-_placed = [(float(s), float(d)) for s, d in re.findall(r'id="vo-\d"[^>]*data-start="([\d.]+)" data-duration="([\d.]+)"', _html)]
+_placed = [(float(s), float(d)) for s, d in re.findall(r'id="vo-\d+"[^>]*data-start="([\d.]+)" data-duration="([\d.]+)"', _html)]
 assert _placed == VOICE, f"VOICE {VOICE} != index.html narration {_placed}"
 
 def midi(n):
@@ -143,6 +143,31 @@ def whoosh(dur=0.7, amp=0.3):
     return amp * x * e
 
 
+def glass_sweep(dur=0.7, amp=0.09, up=True):
+    """Airy glass: high band-passed air whose brightness sweeps across the cut, plus a faint glassy shimmer."""
+    n = int(dur * SR)
+    t = t_arr(n)
+    p = t / dur if up else 1 - t / dur
+    x = rng.standard_normal(n)
+    bands = [fft_filter(x, lo=lo, hi=hi, slope=8) for lo, hi in ((1800, 3500), (3500, 6500), (6500, 11000))]
+    w = [np.clip(1 - abs(p * 2 - k), 0, 1) for k in range(3)]  # crossfade low -> mid -> high band
+    air = sum(wk * bk for wk, bk in zip(w, bands))
+    f = 2600 + 2200 * p  # shimmer glides with the sweep
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    shimmer = 0.06 * (np.sin(ph) + 0.5 * np.sin(1.5 * ph + 1.3))
+    env = np.sin(np.pi * np.clip(t / dur, 0, 1)) ** 2
+    return amp * (air / (np.std(air) + 1e-9) * 0.25 + shimmer) * env
+
+
+def key_click(amp=0.15):
+    """A keyboard key: bright tick plus a short low thock."""
+    n = int(0.06 * SR)
+    t = t_arr(n)
+    tick_ = fft_filter(rng.standard_normal(n), lo=1500, hi=7000) * np.exp(-t * 350)
+    thock = np.sin(2 * np.pi * rng.uniform(170, 210) * t) * np.exp(-t * 90) * 0.6
+    return amp * (tick_ + thock)
+
+
 def scratch(dur, amp=0.05):
     """Pen on paper: high-passed noise with stroke-rate amplitude modulation."""
     n = int(dur * SR)
@@ -210,72 +235,78 @@ def pop(amp=0.1):
     return amp * np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 55)
 
 
-BEAT = 0.5  # 120 bpm, downbeats on 16.2 + k*0.5
+BEAT = 0.5  # 120 bpm, downbeats on 22.4 + k*0.5 (the features groove)
 CH = {"Am": [57, 60, 64], "F": [53, 57, 60], "C": [55, 60, 64], "G": [55, 59, 62]}
 ROOTS = {"Am": 45, "F": 41, "C": 48, "G": 43}
 music = np.zeros((2, N))
 
-# --- Problem: 0–12.4. A ticking clock over a low drone; the crunch cuts hit; physio goes quiet and tender.
-place(music, strings([midi(45), midi(52)], 7.2, amp=0.2, a=1.5, r=1.0, bright=8), 0.0)
-for k in range(14):
-    at = 0.2 + k * 0.5
-    if at < 6.9:
-        place(music, tick(0.07 if k % 2 else 0.1), at, -0.3 if k % 2 else 0.3)
-for at in (4.0, 4.7, 5.87):
-    place(music, tom(0.6, 140, 70, 0.4), at)
-    place(music, stab([midi(57), midi(60)], 0.06), at)
-place(music, strings([midi(41), midi(57), midi(60), midi(64)], 5.6, amp=0.15, a=1.2, r=1.2, bright=7), 7.0)
-place(music, strings([midi(76)], 4.5, amp=0.04, a=1.5, r=1.2, bright=3), 7.6, 0.3)
-# --- Turn: 12.4–16.2. Strings climb, riser into the title impact.
-place(music, strings([midi(m) for m in [48, 55, 60, 64]], 1.9, amp=0.17, a=0.4, r=0.3), 12.4)
-place(music, strings([midi(m) for m in [50, 55, 62, 67]], 1.9, amp=0.19, a=0.3, r=0.3), 14.3)
-place(music, noise_riser(2.6, 0.2), 13.55)
-# --- Impact: 16.2 (title). Bright C major hit that rings under the title.
-place(music, boom(2.8, 60, 30, 0.85), 16.2)
-place(music, braam(48, 2.8, 0.3), 16.2)
-place(music, strings([midi(m) for m in [36, 48, 55, 60, 64, 67]], 3.0, amp=0.24, a=0.03, r=1.2, bright=10), 16.2)
-crash = fft_filter(rng.standard_normal(int(2.2 * SR)), lo=3000, hi=12000) * np.exp(-t_arr(int(2.2 * SR)) * 2.4) * 0.1
-place(music, crash, 16.2, -0.2)
-for b in range(4):
-    place(music, tick(0.06), 17.7 + b * 0.25, 0.4)
-place(music, noise_riser(0.5, 0.18), 18.7)
 
-# --- Groove: 19.2–37.7. Kick on every beat, offbeat hats, 8th-note bass, a chord per bar (Am F C G).
-prog = ["Am", "F", "C", "G"]
-bar = 0
-at = 19.2
-while at < 37.7 - 1e-6:
-    name = prog[bar % 4]
-    place(music, strings([midi(m) for m in CH[name]], 2.1, amp=0.13, a=0.08, r=0.4, bright=8), at)
-    for b in range(4):
-        t0 = at + b * BEAT
-        if t0 >= 37.7:
-            break
-        place(music, kick(0.55), t0)
-        place(music, tick(0.07), t0 + BEAT / 2, 0.35)
-        if t0 >= 31.7:
-            place(music, tick(0.04), t0 + BEAT / 4, -0.35)
-            if b % 2 == 1:
-                place(music, clap(0.16), t0)
-        for e in range(2):
-            place(music, bass(midi(ROOTS[name] - 12 + (12 if e else 0)), 0.24, 0.17), t0 + e * BEAT / 2)
-        if t0 >= 24.3:
-            place(music, stab([midi(CH[name][2] + 12)], 0.05), t0 + 0.75 * BEAT, 0.25)
-    bar += 1
-    at += 4 * BEAT
-place(music, boom(1.5, 58, 34, 0.3), 24.3)
-place(music, boom(1.8, 58, 34, 0.35), 31.7)
-# --- Claim: 37.7–40.2. Drums out, held chord and a riser into the end card.
-place(music, strings([midi(m) for m in [53, 57, 60, 65]], 1.3, amp=0.2, a=0.3, r=0.3), 37.7)
-place(music, strings([midi(m) for m in [55, 59, 62, 67]], 1.3, amp=0.22, a=0.2, r=0.4), 38.95)
-for b in range(5):
-    place(music, kick(0.3), 37.7 + b * BEAT)
-place(music, noise_riser(1.6, 0.18), 38.6)
-# --- End: 40.2. Final hit, C major rings out.
-place(music, boom(3.4, 60, 30, 0.8), 40.2)
-place(music, braam(48, 3.0, 0.25), 40.2)
-place(music, strings([midi(m) for m in [36, 48, 55, 60, 64, 67, 72]], 4.6, amp=0.26, a=0.04, r=2.2, bright=10), 40.2)
-place(music, kick(0.5), 40.2)
+def groove(t0, t1, prog, claps_from=1e9, hats16_from=1e9, stabs_from=1e9, kick_amp=0.55):
+    """Kick on every beat, offbeat hats, 8th-note bass, a chord per bar."""
+    bar, at = 0, t0
+    while at < t1 - 1e-6:
+        name = prog[bar % len(prog)]
+        place(music, strings([midi(m) for m in CH[name]], 2.1, amp=0.13, a=0.08, r=0.4, bright=8), at)
+        for b in range(4):
+            tb = at + b * BEAT
+            if tb >= t1:
+                break
+            place(music, kick(kick_amp), tb)
+            place(music, tick(0.07), tb + BEAT / 2, 0.35)
+            if tb >= hats16_from:
+                place(music, tick(0.04), tb + BEAT / 4, -0.35)
+            if tb >= claps_from and b % 2 == 1:
+                place(music, clap(0.16), tb)
+            for e in range(2):
+                place(music, bass(midi(ROOTS[name] - 12 + (12 if e else 0)), 0.24, 0.17), tb + e * BEAT / 2)
+            if tb >= stabs_from:
+                place(music, stab([midi(CH[name][2] + 12)], 0.05), tb + 0.75 * BEAT, 0.25)
+        bar += 1
+        at += 4 * BEAT
+
+
+# --- Hook: 0–7.4. A moving pulse; a soft hit on each audience cut.
+place(music, strings([midi(45), midi(52), midi(57)], 7.6, amp=0.16, a=0.6, r=0.6, bright=8), 0.0)
+for k in range(29):
+    at = k * 0.25
+    place(music, tick(0.05 if k % 2 else 0.08), at, -0.3 if k % 2 else 0.3)
+    if k % 2 == 0:
+        place(music, kick(0.32), at)
+for at in (1.85, 2.78, 3.4, 4.97):
+    place(music, tom(0.6, 140, 70, 0.3), at)
+place(music, noise_riser(1.4, 0.12), 6.1)
+# --- Problem: 7.4–13.7. Tension: ticking over a drone, frantic once the dozen apps join; a thud when it all drops.
+place(music, strings([midi(m) for m in [41, 57, 60]], 6.4, amp=0.15, a=0.8, r=0.6, bright=7), 7.4)
+for k in range(21):
+    at = 7.4 + k * 0.25
+    place(music, tick(0.06 + 0.03 * (at > 11.6)), at, -0.3 if k % 2 else 0.3)
+    if at > 11.6:
+        place(music, tick(0.05), at + 0.125, 0.3 if k % 2 else -0.3)
+place(music, tom(0.8, 110, 50, 0.4), 12.7)
+place(music, noise_riser(1.0, 0.15), 12.7)
+# --- Reveal: 13.7. Impact, then a lifted bed under the app.
+place(music, boom(2.8, 60, 30, 0.8), 13.7)
+place(music, braam(48, 2.8, 0.26), 13.7)
+place(music, strings([midi(m) for m in [36, 48, 55, 60, 64, 67]], 3.2, amp=0.22, a=0.03, r=1.2, bright=10), 13.7)
+crash = fft_filter(rng.standard_normal(int(2.2 * SR)), lo=3000, hi=12000) * np.exp(-t_arr(int(2.2 * SR)) * 2.4) * 0.08
+place(music, crash, 13.7, -0.2)
+for k in range(4):
+    place(music, kick(0.3), 15.6 + k * 0.5)
+place(music, noise_riser(1.1, 0.15), 16.8)
+# --- Features: 17.9–32.1. The groove builds as the features stack up.
+groove(17.9, 32.1, ["Am", "F", "C", "G"], claps_from=24.5, hats16_from=27.3, stabs_from=19.9)
+for at in (19.9, 22.2, 24.5):
+    place(music, boom(1.4, 58, 34, 0.26), at)
+place(music, boom(1.8, 58, 34, 0.33), 27.3)
+# --- Transformation: 32.1–36.3. Brighter progression, riser into the end card.
+groove(32.1, 35.7, ["F", "G"], claps_from=32.1, hats16_from=32.1, stabs_from=32.1, kick_amp=0.6)
+place(music, strings([midi(m) for m in [55, 59, 62, 67]], 0.9, amp=0.22, a=0.2, r=0.4), 35.5)
+place(music, noise_riser(1.5, 0.17), 34.8)
+# --- End: 36.3. Final hit; C major rings out under the logo.
+place(music, boom(3.4, 60, 30, 0.75), 36.3)
+place(music, braam(48, 3.0, 0.2), 36.3)
+place(music, strings([midi(m) for m in [36, 48, 55, 60, 64, 67, 72]], 6.6, amp=0.24, a=0.04, r=3.0, bright=10), 36.3)
+place(music, kick(0.5), 36.3)
 
 music = np.stack([reverb(music[0]), reverb(music[1])])
 duck = np.ones(N)
@@ -285,21 +316,40 @@ for s, d in VOICE:
     g = np.clip(np.minimum((t - a0) / 0.09, (a1 + 0.25 - t) / 0.25), 0, 1)
     duck = np.minimum(duck, 1 - 0.6 * g)
 music *= duck
-music *= np.clip((45.0 - t) / 2.0, 0, 1)
+music *= np.clip((DUR - t) / 2.0, 0, 1)
 
 sfx = np.zeros((2, N))
-for c in [4.0, 4.7, 5.87, 7.0, 12.4, 19.0, 24.3, 31.7, 37.7, 40.2]:
-    place(sfx, whoosh(rng.uniform(0.6, 0.8), 0.3), c - 0.38, rng.uniform(-0.5, 0.5))
-for k in range(4):  # red crosses on the calendar
-    place(sfx, scratch(0.18, 0.07), 6.0 + k * 0.17, 0.2)
-for at in (8.25, 9.15):  # rings drawn on knee and back
-    place(sfx, scratch(0.45, 0.06), at, -0.2)
-for k in range(5):  # the coach's plan writes itself
-    place(sfx, scratch(0.28, 0.05), 19.0 + 4.15 + k * 0.2, -0.1)
-for k in range(3):  # steps ticked off in the app
-    place(sfx, pop(0.12), 24.3 + 4.17 + k * 0.38, 0.2)
-for k in range(16):  # homes light up across the city
-    place(sfx, pop(0.05), 37.7 + 0.43 + k * 0.07, rng.uniform(-0.6, 0.6))
+# Scene changes: an airy glass sweep, like a glass panel sliding past (peaks on the cut).
+for i, c in enumerate([1.85, 2.78, 3.4, 4.97, 7.4, 13.7, 17.9, 19.9, 22.2, 24.5, 25.85, 27.3, 32.1, 36.3]):
+    place(sfx, glass_sweep(0.7, 0.09, up=i % 2 == 0), c - 0.42, -0.35 if i % 2 else 0.35)
+# Keyboard: one click per character of the typed website. Must match TYPE_AT / GAPS in compositions/endcard.html.
+TYPE_AT = 36.3 + 4.1
+TYPE_GAPS = [0.09, 0.07, 0.1, 0.08, 0.11, 0.07, 0.09, 0.13, 0.08, 0.07, 0.1, 0.08]
+k = TYPE_AT
+for g in TYPE_GAPS:
+    place(sfx, key_click(rng.uniform(0.13, 0.17)), k, rng.uniform(-0.15, 0.15))
+    k += g
+for at in (8.38, 9.12, 9.92, 10.66):  # juggled icons: clients, schedules, workouts, progress
+    place(sfx, pop(0.1), at, rng.uniform(-0.5, 0.5))
+for k in range(8):  # a dozen different apps
+    place(sfx, pop(0.05), 11.6 + k * 0.06, rng.uniform(-0.7, 0.7))
+for k in range(6):  # icons hit the floor
+    place(sfx, tom(0.25, 160, 80, 0.12), 12.95 + k * 0.07, rng.uniform(-0.6, 0.6))
+place(sfx, pop(0.09), 16.7, 0.2)  # brand mark
+for at in (19.35, 20.75, 28.9):  # milestone, plan shared, payment received
+    place(sfx, pop(0.12), at, 0.2)
+place(sfx, glass_sweep(0.6, 0.05, up=True), 19.9, 0.3)  # plan flies to the phone
+for k in range(3):  # food lands on the plate
+    place(sfx, pop(0.07), 22.4 + k * 0.22, -0.3)
+for k in range(3):  # AI sparkles
+    place(sfx, tick(0.05), 23.85 + k * 0.1, 0.3)
+for k in range(8):  # members join
+    place(sfx, pop(0.05), 24.85 + k * 0.06, rng.uniform(-0.5, 0.5))
+place(sfx, pop(0.1), 25.85, -0.3)  # price tag
+place(sfx, pop(0.1), 28.5, 0.3)  # class booked
+for at in (33.0, 33.5, 34.35):  # coach's tablet updates clients
+    place(sfx, pop(0.08), at, rng.uniform(-0.4, 0.4))
+place(sfx, pop(0.07), 41.45, 0.0)  # email
 sfx = np.stack([reverb(sfx[0], 0.8, 0.15), reverb(sfx[1], 0.8, 0.15)])
 
 

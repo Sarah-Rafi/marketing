@@ -1,0 +1,74 @@
+[
+  {
+    "text": "We",
+    "start": 0.06,
+    "end": 0.16,
+    "id": "w0"
+  },
+  {
+    "text": "test",
+    "start": 0.16,
+    "end": 0.48,
+    "id": "w1"
+  },
+  {
+    "text": "it,",
+    "start": 0.48,
+    "end": 0.7,
+    "id": "w2"
+  },
+  {
+    "text": "launch",
+    "start": 0.88,
+    "end": 1.26,
+    "id": "w3"
+  },
+  {
+    "text": "it,",
+    "start": 1.26,
+    "end": 1.6,
+    "id": "w4"
+  },
+  {
+    "text": "and",
+    "start": 1.62,
+    "end": 1.79,
+    "id": "w5"
+  },
+  {
+    "text": "put",
+    "start": 1.79,
+    "end": 1.98,
+    "id": "w6"
+  },
+  {
+    "text": "it",
+    "start": 1.98,
+    "end": 2.1,
+    "id": "w7"
+  },
+  {
+    "text": "in",
+    "start": 2.1,
+    "end": 2.22,
+    "id": "w8"
+  },
+  {
+    "text": "your",
+    "start": 2.22,
+    "end": 2.47,
+    "id": "w9"
+  },
+  {
+    "text": "user's",
+    "start": 2.47,
+    "end": 2.83,
+    "id": "w10"
+  },
+  {
+    "text": "hands.",
+    "start": 2.83,
+    "end": 3.22,
+    "id": "w11"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "text": "and",
+    "start": 0.04,
+    "end": 0.15,
+    "id": "w0"
+  },
+  {
+    "text": "stay",
+    "start": 0.19,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "connected",
+    "start": 0.4,
+    "end": 0.91,
+    "id": "w2"
+  },
+  {
+    "text": "with",
+    "start": 0.91,
+    "end": 1.13,
+    "id": "w3"
+  },
+  {
+    "text": "the",
+    "start": 1.2,
+    "end": 1.31,
+    "id": "w4"
+  },
+  {
+    "text": "resources",
+    "start": 1.31,
+    "end": 1.82,
+    "id": "w5"
+  },
+  {
+    "text": "you",
+    "start": 1.82,
+    "end": 1.99,
+    "id": "w6"
+  },
+  {
+    "text": "provide.",
+    "start": 1.99,
+    "end": 2.54,
+    "id": "w7"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "text": "Daily",
+    "start": 0.04,
+    "end": 0.38,
+    "id": "w0"
+  },
+  {
+    "text": "nudges",
+    "start": 0.38,
+    "end": 0.83,
+    "id": "w1"
+  },
+  {
+    "text": "build",
+    "start": 0.83,
+    "end": 1.16,
+    "id": "w2"
+  },
+  {
+    "text": "healthy",
+    "start": 1.25,
+    "end": 1.73,
+    "id": "w3"
+  },
+  {
+    "text": "habits,",
+    "start": 1.73,
+    "end": 2.33,
+    "id": "w4"
+  },
+  {
+    "text": "journaling",
+    "start": 2.33,
+    "end": 2.9,
+    "id": "w5"
+  },
+  {
+    "text": "walks",
+    "start": 2.9,
+    "end": 3.18,
+    "id": "w6"
+  },
+  {
+    "text": "exercise",
+    "start": 3.18,
+    "end": 3.64,
+    "id": "w7"
+  },
+  {
+    "text": "and",
+    "start": 3.64,
+    "end": 3.8,
+    "id": "w8"
+  },
+  {
+    "text": "better",
+    "start": 3.82,
+    "end": 4.14,
+    "id": "w9"
+  },
+  {
+    "text": "meals.",
+    "start": 4.16,
+    "end": 4.62,
+    "id": "w10"
+  }
+]

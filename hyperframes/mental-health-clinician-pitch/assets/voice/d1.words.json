@@ -1,0 +1,62 @@
+[
+  {
+    "text": "With",
+    "start": 0.04,
+    "end": 0.15,
+    "id": "w0"
+  },
+  {
+    "text": "Tech'd",
+    "start": 0.23,
+    "end": 0.52,
+    "id": "w1"
+  },
+  {
+    "text": "Soft",
+    "start": 0.54,
+    "end": 0.76,
+    "id": "w2"
+  },
+  {
+    "text": "your",
+    "start": 0.76,
+    "end": 0.98,
+    "id": "w3"
+  },
+  {
+    "text": "care",
+    "start": 0.98,
+    "end": 1.2,
+    "id": "w4"
+  },
+  {
+    "text": "doesn't",
+    "start": 1.2,
+    "end": 1.56,
+    "id": "w5"
+  },
+  {
+    "text": "stop",
+    "start": 1.57,
+    "end": 1.77,
+    "id": "w6"
+  },
+  {
+    "text": "at",
+    "start": 1.83,
+    "end": 1.88,
+    "id": "w7"
+  },
+  {
+    "text": "the",
+    "start": 1.9,
+    "end": 2.02,
+    "id": "w8"
+  },
+  {
+    "text": "session.",
+    "start": 2.06,
+    "end": 2.5,
+    "id": "w9"
+  }
+]

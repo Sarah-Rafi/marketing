@@ -1,86 +1,86 @@
 [
   {
-    "text": "So",
-    "start": 0.13,
-    "end": 0.18,
+    "text": "Track",
+    "start": 0.06,
+    "end": 0.31,
     "id": "w0"
   },
   {
-    "text": "what",
-    "start": 0.18,
-    "end": 0.53,
+    "text": "every",
+    "start": 0.37,
+    "end": 0.67,
     "id": "w1"
   },
   {
-    "text": "if",
-    "start": 0.53,
-    "end": 0.71,
+    "text": "client's",
+    "start": 0.67,
+    "end": 1.22,
     "id": "w2"
   },
   {
-    "text": "the",
-    "start": 0.71,
-    "end": 0.98,
+    "text": "progress,",
+    "start": 1.22,
+    "end": 1.92,
     "id": "w3"
   },
   {
-    "text": "gym,",
-    "start": 0.98,
-    "end": 1.44,
+    "text": "share",
+    "start": 1.96,
+    "end": 2.26,
     "id": "w4"
   },
   {
-    "text": "the",
-    "start": 1.52,
-    "end": 1.65,
+    "text": "personalized",
+    "start": 2.32,
+    "end": 3.15,
     "id": "w5"
   },
   {
-    "text": "studio",
-    "start": 1.69,
-    "end": 2.11,
+    "text": "workouts,",
+    "start": 3.15,
+    "end": 3.76,
     "id": "w6"
   },
   {
     "text": "and",
-    "start": 2.12,
-    "end": 2.25,
+    "start": 3.8,
+    "end": 3.91,
     "id": "w7"
   },
   {
-    "text": "the",
-    "start": 2.25,
-    "end": 2.36,
+    "text": "give",
+    "start": 3.93,
+    "end": 4.12,
     "id": "w8"
   },
   {
-    "text": "clinic",
-    "start": 2.42,
-    "end": 2.57,
+    "text": "smarter",
+    "start": 4.2,
+    "end": 4.52,
     "id": "w9"
   },
   {
-    "text": "could",
-    "start": 2.66,
-    "end": 2.85,
+    "text": "nutrition",
+    "start": 4.52,
+    "end": 5.03,
     "id": "w10"
   },
   {
-    "text": "come",
-    "start": 2.87,
-    "end": 3.01,
+    "text": "support",
+    "start": 5.08,
+    "end": 5.43,
     "id": "w11"
   },
   {
-    "text": "to",
-    "start": 3.01,
-    "end": 3.09,
+    "text": "with",
+    "start": 5.54,
+    "end": 5.79,
     "id": "w12"
   },
   {
-    "text": "them?",
-    "start": 3.09,
-    "end": 3.37,
+    "text": "AI.",
+    "start": 5.85,
+    "end": 6.26,
     "id": "w13"
   }
 ]

@@ -1,0 +1,98 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: radial-gradient(ellipse 60% 70% at 66% 50%, #f6e9d8 0%, #ead8c2 100%);
+      font-family: "Nunito", sans-serif;
+      color: #1e3236;
+    }
+    #wl-word {
+      position: absolute;
+      left: 150px;
+      top: 0;
+      width: 880px;
+      height: 1080px;
+      display: flex;
+      align-items: center;
+      font-weight: 900;
+      font-size: 124px;
+      line-height: 1.02;
+      text-transform: uppercase;
+    }
+    #wl-phone {
+      position: absolute;
+      left: 1080px;
+      top: 90px;
+      width: 440px;
+      height: 900px;
+      border-radius: 64px;
+      background: #0b1214;
+      border: 8px solid #3b5155;
+      box-shadow: 0 40px 90px rgba(60, 40, 20, 0.3);
+    }
+    #wl-screen {
+      position: absolute;
+      inset: 12px;
+      border-radius: 50px;
+      overflow: hidden;
+      background: #fbf6ee;
+      padding: 64px 26px 24px;
+    }
+    #wl-pill {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 12px;
+      background: #e3ece6;
+      font-weight: 800;
+      font-size: 28px;
+    }
+    .wl-h {
+      margin-top: 20px;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 1.15;
+    }
+    .wl-sub {
+      font-weight: 600;
+      font-size: 28px;
+      color: rgba(30, 50, 54, 0.7);
+      margin-top: 6px;
+    }
+    .wl-card {
+      margin-top: 22px;
+      padding: 22px 24px;
+      border-radius: 24px;
+      font-weight: 800;
+      font-size: 32px;
+    }
+    .wl-card small {
+      display: block;
+      font-weight: 600;
+      font-size: 28px;
+      opacity: 0.75;
+    }
+  </style>
+  <div id="root" data-composition-id="waitlist" data-width="1920" data-height="1080">
+    <div id="wl-word">While<br />they<br />wait.</div>
+    <div id="wl-phone">
+      <div id="wl-screen">
+        <div id="wl-pill">On the waitlist</div>
+        <div class="wl-h">Support starts today, not in weeks</div>
+        <div class="wl-card" style="margin-top: 36px; background: #f2a97e">Daily check-in<small>1 minute</small></div>
+        <div class="wl-card" style="background: #cfe0d6">Sleep basics<small>Week 1</small></div>
+        <div class="wl-card" style="background: #ecdcc3">Calm breathing<small>4 minutes</small></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // "your waitlist" (1.16–1.64), "get support" (1.84–2.44), "while they wait" (2.44–3.1).
+    tl.fromTo("#wl-phone", { x: 120, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0);
+    tl.fromTo("#wl-pill", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, 0.5);
+    tl.fromTo(".wl-card", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out", stagger: 0.15 }, 1.0);
+    tl.fromTo("#wl-word", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 1.5);
+    window.__timelines["waitlist"] = tl;
+  </script>
+</template>

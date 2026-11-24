@@ -1,0 +1,44 @@
+[
+  {
+    "text": "design",
+    "start": 0.04,
+    "end": 0.47,
+    "id": "w0"
+  },
+  {
+    "text": "and",
+    "start": 0.49,
+    "end": 0.71,
+    "id": "w1"
+  },
+  {
+    "text": "build",
+    "start": 0.77,
+    "end": 1.08,
+    "id": "w2"
+  },
+  {
+    "text": "it",
+    "start": 1.19,
+    "end": 1.3,
+    "id": "w3"
+  },
+  {
+    "text": "around",
+    "start": 1.3,
+    "end": 1.79,
+    "id": "w4"
+  },
+  {
+    "text": "real",
+    "start": 1.79,
+    "end": 2.12,
+    "id": "w5"
+  },
+  {
+    "text": "users.",
+    "start": 2.12,
+    "end": 2.6,
+    "id": "w6"
+  }
+]

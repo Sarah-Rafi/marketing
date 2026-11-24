@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --night: #142225;
+        --teal: #1e3236;
+        --ink: #e8eee9;
+        --apricot: #f2a97e;
+        --sage: #8fb09a;
+        --sand: #efe4d4;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--night);
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: var(--night);
+      }
+      #fx-vignette {
+        position: absolute;
+        inset: 0;
+        z-index: 40;
+        pointer-events: none;
+        background: radial-gradient(ellipse 80% 75% at 50% 48%, transparent 62%, rgba(0, 0, 0, 0.32) 100%);
+      }
+      #fx-grain {
+        position: absolute;
+        inset: -200px;
+        z-index: 41;
+        pointer-events: none;
+        opacity: 0.05;
+        mix-blend-mode: overlay;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='23' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>");
+        background-size: 300px 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TECTSOFT — "Care doesn't end when the session does" (72.4 s). Earlier cuts: versions/87s/, versions/76s/. -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="72.4" data-width="1920" data-height="1080">
+      <div id="hook" data-composition-id="hook" data-composition-src="compositions/hook.html" data-start="0" data-duration="8.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="week" data-composition-id="week" data-composition-src="compositions/week.html" data-start="8.6" data-duration="4.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="office" data-composition-id="office" data-composition-src="compositions/office.html" data-start="13.4" data-duration="8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="dawn" data-composition-id="dawn" data-composition-src="compositions/dawn.html" data-start="21.4" data-duration="6.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="checkin" data-composition-id="checkin" data-composition-src="compositions/checkin.html" data-start="28" data-duration="5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="habits" data-composition-id="habits" data-composition-src="compositions/habits.html" data-start="33" data-duration="4.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="resources" data-composition-id="resources" data-composition-src="compositions/resources.html" data-start="37.8" data-duration="4.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="dashboard" data-composition-id="dashboard" data-composition-src="compositions/dashboard.html" data-start="42" data-duration="5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="session" data-composition-id="session" data-composition-src="compositions/session.html" data-start="47" data-duration="10" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="city" data-composition-id="city" data-composition-src="compositions/city.html" data-start="57" data-duration="9.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="endcard" data-composition-id="endcard" data-composition-src="compositions/endcard.html" data-start="66.4" data-duration="6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="72.4" data-track-index="3" data-track-kind="captions" data-width="1920" data-height="1080" style="z-index: 50"></div>
+
+      <div id="fx-vignette" class="clip" data-start="0" data-duration="72.4" data-track-index="4"></div>
+      <div id="fx-grain" class="clip" data-start="0" data-duration="72.4" data-track-index="4"></div>
+
+      <!-- Narrator: Kokoro-82M bf_emma. Script: scripts/narration.tsv -->
+      <audio id="vo-a1" src="assets/voice2/a1.wav" data-start="0.3" data-duration="5.48" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-a2" src="assets/voice2/a2.wav" data-start="6.2" data-duration="1.49" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v2" src="assets/voice2/v2.wav" data-start="8.9" data-duration="3.78" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v3" src="assets/voice2/v3.wav" data-start="13.7" data-duration="4.63" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-d1" src="assets/voice2/d1.wav" data-start="21.7" data-duration="1.71" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-d2" src="assets/voice2/d2.wav" data-start="23.7" data-duration="3.43" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v5" src="assets/voice2/v5.wav" data-start="28.3" data-duration="1.81" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v6a" src="assets/voice2/v6a.wav" data-start="30.4" data-duration="2.22" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v6b" src="assets/voice2/v6b.wav" data-start="33.3" data-duration="2.41" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v6c" src="assets/voice2/v6c.wav" data-start="38.1" data-duration="2.65" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v7" src="assets/voice2/v7.wav" data-start="42.3" data-duration="2.92" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v8" src="assets/voice2/v8.wav" data-start="47.3" data-duration="4.35" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v9" src="assets/voice2/v9.wav" data-start="52" data-duration="4.37" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v10" src="assets/voice2/v10.wav" data-start="57.3" data-duration="5.40" data-track-index="10" data-volume="1.5"></audio>
+      <audio id="vo-v11" src="assets/voice2/v11.wav" data-start="63" data-duration="2.75" data-track-index="10" data-volume="1.5"></audio>
+      <!-- Original score + effects, synthesised by scripts/score.py -->
+      <audio id="music" src="assets/music/score.wav" data-start="0" data-duration="72.4" data-volume="1" data-track-index="11"></audio>
+      <audio id="sfx" src="assets/sfx/sfx.wav" data-start="0" data-duration="72.4" data-volume="0.7" data-track-index="12"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      // Film grain: jump the noise tile 12 times a second (stepped, deterministic).
+      const grainSteps = 869;
+      tl.fromTo(
+        "#fx-grain",
+        { x: 0, y: 0 },
+        {
+          keyframes: Array.from({ length: grainSteps }, (_, i) => ({
+            x: ((i * 137) % 200) - 100,
+            y: ((i * 89) % 200) - 100,
+            duration: 72.4 / grainSteps,
+            ease: "steps(1)",
+          })),
+        },
+        0,
+      );
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

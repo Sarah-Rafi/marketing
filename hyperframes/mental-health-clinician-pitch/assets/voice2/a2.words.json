@@ -1,0 +1,32 @@
+[
+  {
+    "text": "But",
+    "start": 0.08,
+    "end": 0.19,
+    "id": "w0"
+  },
+  {
+    "text": "you",
+    "start": 0.19,
+    "end": 0.36,
+    "id": "w1"
+  },
+  {
+    "text": "keep",
+    "start": 0.38,
+    "end": 0.63,
+    "id": "w2"
+  },
+  {
+    "text": "getting",
+    "start": 0.63,
+    "end": 1.07,
+    "id": "w3"
+  },
+  {
+    "text": "stuck.",
+    "start": 1.07,
+    "end": 1.44,
+    "id": "w4"
+  }
+]

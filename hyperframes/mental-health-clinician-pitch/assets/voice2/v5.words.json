@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Imagine",
+    "start": 0.04,
+    "end": 0.44,
+    "id": "w0"
+  },
+  {
+    "text": "your",
+    "start": 0.44,
+    "end": 0.69,
+    "id": "w1"
+  },
+  {
+    "text": "own",
+    "start": 0.69,
+    "end": 0.88,
+    "id": "w2"
+  },
+  {
+    "text": "practice",
+    "start": 0.88,
+    "end": 1.36,
+    "id": "w3"
+  },
+  {
+    "text": "app.",
+    "start": 1.38,
+    "end": 1.71,
+    "id": "w4"
+  }
+]

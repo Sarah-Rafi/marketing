@@ -1,0 +1,62 @@
+[
+  {
+    "text": "understand",
+    "start": 0.12,
+    "end": 0.98,
+    "id": "w0"
+  },
+  {
+    "text": "the",
+    "start": 0.98,
+    "end": 1.27,
+    "id": "w1"
+  },
+  {
+    "text": "idea",
+    "start": 1.27,
+    "end": 1.43,
+    "id": "w2"
+  },
+  {
+    "text": "and",
+    "start": 1.88,
+    "end": 1.9,
+    "id": "w3"
+  },
+  {
+    "text": "validate",
+    "start": 1.9,
+    "end": 2.49,
+    "id": "w4"
+  },
+  {
+    "text": "it",
+    "start": 2.49,
+    "end": 2.63,
+    "id": "w5"
+  },
+  {
+    "text": "against",
+    "start": 2.63,
+    "end": 3.07,
+    "id": "w6"
+  },
+  {
+    "text": "the",
+    "start": 3.15,
+    "end": 3.35,
+    "id": "w7"
+  },
+  {
+    "text": "real",
+    "start": 3.35,
+    "end": 3.63,
+    "id": "w8"
+  },
+  {
+    "text": "market.",
+    "start": 3.63,
+    "end": 4.18,
+    "id": "w9"
+  }
+]

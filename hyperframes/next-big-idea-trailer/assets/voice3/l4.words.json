@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Understand",
+    "start": 0.12,
+    "end": 0.76,
+    "id": "w0"
+  },
+  {
+    "text": "the",
+    "start": 0.76,
+    "end": 0.99,
+    "id": "w1"
+  },
+  {
+    "text": "problem,",
+    "start": 0.99,
+    "end": 1.67,
+    "id": "w2"
+  },
+  {
+    "text": "know",
+    "start": 1.67,
+    "end": 1.95,
+    "id": "w3"
+  },
+  {
+    "text": "your",
+    "start": 1.95,
+    "end": 2.23,
+    "id": "w4"
+  },
+  {
+    "text": "customer,",
+    "start": 2.23,
+    "end": 2.96,
+    "id": "w5"
+  },
+  {
+    "text": "validate",
+    "start": 2.96,
+    "end": 3.63,
+    "id": "w6"
+  },
+  {
+    "text": "the",
+    "start": 3.63,
+    "end": 3.88,
+    "id": "w7"
+  },
+  {
+    "text": "idea,",
+    "start": 3.88,
+    "end": 4.36,
+    "id": "w8"
+  },
+  {
+    "text": "then",
+    "start": 4.41,
+    "end": 4.61,
+    "id": "w9"
+  },
+  {
+    "text": "make",
+    "start": 4.61,
+    "end": 4.85,
+    "id": "w10"
+  },
+  {
+    "text": "a",
+    "start": 4.85,
+    "end": 4.92,
+    "id": "w11"
+  },
+  {
+    "text": "clear",
+    "start": 4.92,
+    "end": 5.23,
+    "id": "w12"
+  },
+  {
+    "text": "plan.",
+    "start": 5.3,
+    "end": 5.62,
+    "id": "w13"
+  }
+]

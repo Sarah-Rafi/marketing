@@ -1,0 +1,68 @@
+[
+  {
+    "text": "an",
+    "start": 0.11,
+    "end": 0.2,
+    "id": "w0"
+  },
+  {
+    "text": "app,",
+    "start": 0.2,
+    "end": 0.69,
+    "id": "w1"
+  },
+  {
+    "text": "a",
+    "start": 0.69,
+    "end": 0.79,
+    "id": "w2"
+  },
+  {
+    "text": "website,",
+    "start": 0.79,
+    "end": 1.64,
+    "id": "w3"
+  },
+  {
+    "text": "branding,",
+    "start": 1.64,
+    "end": 2.36,
+    "id": "w4"
+  },
+  {
+    "text": "most",
+    "start": 2.39,
+    "end": 2.6,
+    "id": "w5"
+  },
+  {
+    "text": "people",
+    "start": 2.7,
+    "end": 3,
+    "id": "w6"
+  },
+  {
+    "text": "jump",
+    "start": 3,
+    "end": 3.22,
+    "id": "w7"
+  },
+  {
+    "text": "straight",
+    "start": 3.22,
+    "end": 3.67,
+    "id": "w8"
+  },
+  {
+    "text": "to",
+    "start": 3.75,
+    "end": 3.84,
+    "id": "w9"
+  },
+  {
+    "text": "solutions.",
+    "start": 3.84,
+    "end": 4.53,
+    "id": "w10"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "text": "less",
+    "start": 0.04,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "time",
+    "start": 0.3,
+    "end": 0.58,
+    "id": "w1"
+  },
+  {
+    "text": "managing",
+    "start": 0.58,
+    "end": 1.12,
+    "id": "w2"
+  },
+  {
+    "text": "scattered",
+    "start": 1.15,
+    "end": 1.81,
+    "id": "w3"
+  },
+  {
+    "text": "information,",
+    "start": 1.81,
+    "end": 2.76,
+    "id": "w4"
+  },
+  {
+    "text": "more",
+    "start": 2.76,
+    "end": 3.01,
+    "id": "w5"
+  },
+  {
+    "text": "time",
+    "start": 3.01,
+    "end": 3.24,
+    "id": "w6"
+  },
+  {
+    "text": "focusing",
+    "start": 3.33,
+    "end": 3.76,
+    "id": "w7"
+  },
+  {
+    "text": "on",
+    "start": 3.76,
+    "end": 3.86,
+    "id": "w8"
+  },
+  {
+    "text": "people.",
+    "start": 3.91,
+    "end": 4.32,
+    "id": "w9"
+  }
+]

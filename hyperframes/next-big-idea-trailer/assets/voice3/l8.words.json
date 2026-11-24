@@ -1,0 +1,44 @@
+[
+  {
+    "text": "Clarity",
+    "start": 0.04,
+    "end": 0.63,
+    "id": "w0"
+  },
+  {
+    "text": "before",
+    "start": 0.63,
+    "end": 1.13,
+    "id": "w1"
+  },
+  {
+    "text": "execution,",
+    "start": 1.18,
+    "end": 2.07,
+    "id": "w2"
+  },
+  {
+    "text": "let's",
+    "start": 2.07,
+    "end": 2.24,
+    "id": "w3"
+  },
+  {
+    "text": "build",
+    "start": 2.24,
+    "end": 2.42,
+    "id": "w4"
+  },
+  {
+    "text": "it",
+    "start": 2.42,
+    "end": 2.49,
+    "id": "w5"
+  },
+  {
+    "text": "together.",
+    "start": 2.49,
+    "end": 3.13,
+    "id": "w6"
+  }
+]

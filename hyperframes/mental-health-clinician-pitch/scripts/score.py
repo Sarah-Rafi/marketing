@@ -1,8 +1,8 @@
-"""Original calm score + sound effects for the mental-health pitch (therapist version), synthesised from scratch.
+"""Original calm score + sound effects for the mental-health pitch ("Care doesn't end when the session does"), synthesised from scratch.
 
 Deterministic (seeded). No samples, no third-party music. Writes:
   assets/music/score.wav  (music bed, voice ducking baked in)
-  assets/sfx/sfx.wav      (soft whooshes, pen, typing, taps, a phone buzz)
+  assets/sfx/sfx.wav      (soft glass sweeps, taps, keyboard clicks)
 
 Run:  ~/.venvs/kokoro/bin/python scripts/score.py
 """
@@ -14,14 +14,14 @@ import wave
 import numpy as np
 
 SR = 48000
-DUR = 76.2
+DUR = 65.4
 N = int(SR * DUR)
 rng = np.random.default_rng(20261114)
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
 # Speech windows (absolute seconds) — must match index.html <audio> starts + durations.
-VOICE = [(0.5, 3.2), (4.0, 3.95), (8.6, 4.54), (13.4, 2.05), (16.2, 3.41), (20.2, 6.85), (27.4, 4.59), (32.5, 1.17), (36.0, 4.5), (41.2, 4.22), (46.0, 4.89), (51.2, 4.54), (56.4, 2.92), (59.6, 4.07), (64.4, 7.08)]
+VOICE = [(0.3, 5.48), (6.2, 1.49), (8.6, 2.01), (14.7, 1.71), (16.7, 3.43), (21.3, 1.81), (23.4, 2.22), (26.3, 2.41), (31.1, 2.65), (35.3, 2.92), (40.3, 4.35), (45.0, 4.37), (50.3, 5.4), (56.0, 2.75)]
 _html = open(os.path.join(ROOT, "index.html")).read()
 _placed = [(float(s), float(d)) for s, d in re.findall(r'id="vo-\w+"[^>]*data-start="([\d.]+)" data-duration="([\d.]+)"', _html)]
 assert _placed == VOICE, f"VOICE {VOICE} != index.html speech {_placed}"
@@ -143,6 +143,31 @@ def whoosh(dur=0.7, amp=0.3):
     return amp * x * e
 
 
+def glass_sweep(dur=0.7, amp=0.09, up=True):
+    """Airy glass: high band-passed air whose brightness sweeps across the cut, plus a faint glassy shimmer."""
+    n = int(dur * SR)
+    t = t_arr(n)
+    p = t / dur if up else 1 - t / dur
+    x = rng.standard_normal(n)
+    bands = [fft_filter(x, lo=lo, hi=hi, slope=8) for lo, hi in ((1800, 3500), (3500, 6500), (6500, 11000))]
+    w = [np.clip(1 - abs(p * 2 - k), 0, 1) for k in range(3)]  # crossfade low -> mid -> high band
+    air = sum(wk * bk for wk, bk in zip(w, bands))
+    f = 2600 + 2200 * p  # shimmer glides with the sweep
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    shimmer = 0.06 * (np.sin(ph) + 0.5 * np.sin(1.5 * ph + 1.3))
+    env = np.sin(np.pi * np.clip(t / dur, 0, 1)) ** 2
+    return amp * (air / (np.std(air) + 1e-9) * 0.25 + shimmer) * env
+
+
+def key_click(amp=0.15):
+    """A keyboard key: bright tick plus a short low thock."""
+    n = int(0.06 * SR)
+    t = t_arr(n)
+    tick_ = fft_filter(rng.standard_normal(n), lo=1500, hi=7000) * np.exp(-t * 350)
+    thock = np.sin(2 * np.pi * rng.uniform(170, 210) * t) * np.exp(-t * 90) * 0.6
+    return amp * (tick_ + thock)
+
+
 def scratch(dur, amp=0.05):
     """Pen on paper: high-passed noise with stroke-rate amplitude modulation."""
     n = int(dur * SR)
@@ -210,25 +235,30 @@ BEAT = 60 / 76
 music = np.zeros((2, N))
 F = lambda *ms: [midi(m) for m in ms]
 
-# --- Night: 0–32.2. A low, patient pad under the therapist's words; a few lonely piano notes between lines.
-place(music, strings(F(38, 45, 53, 64), 11.2, amp=0.14, a=2.0, r=1.5, bright=6), 0.0)
-place(music, strings(F(34, 46, 53, 62), 11.0, amp=0.12, a=1.5, r=1.6, bright=6), 10.4)
-place(music, strings(F(36, 43, 52, 60), 11.2, amp=0.12, a=1.5, r=1.6, bright=6), 20.6)
-for at, m in [(0.2, 69), (3.8, 72), (8.2, 69), (13.2, 67), (15.8, 65), (19.8, 64), (27.1, 62), (31.0, 60)]:
+# --- Hook: 0–8.6. "Psychiatrist? Therapist? Clinic owner?" — a note per role; the city lights up on "a real difference";
+# "But you keep getting stuck": the harmony darkens and the barriers land.
+place(music, strings(F(41, 53, 57, 60, 65), 6.4, amp=0.12, a=0.8, r=1.2, bright=6), 0.0)
+for at, m in [(0.75, 69), (1.8, 72), (2.65, 77)]:
+    place(music, pluck(midi(m), 2.6, 0.08), at, 0.2)
+for k, m in enumerate([65, 69, 72, 77, 81]):
+    place(music, pluck(midi(m), 2.0, 0.05), 3.85 + k * 0.3, (-0.3, 0.3)[k % 2])
+place(music, strings(F(37, 49, 56, 61), 2.8, amp=0.13, a=0.15, r=0.9, bright=5), 6.2)
+place(music, boom(1.6, 55, 32, 0.22), 6.95)
+# --- Where you get stuck: 8.4–14.4. A low pad; the problems pile up.
+place(music, strings(F(34, 46, 53, 62), 6.6, amp=0.13, a=0.8, r=1.4, bright=6), 8.2)
+for at, m in [(8.5, 69), (11.6, 65)]:
     place(music, pluck(midi(m), 3.0, 0.07), at, 0.2)
-# 4 a.m.: the pad thins, one high note.
-place(music, strings(F(81), 4.0, amp=0.03, a=0.5, r=1.2, bright=3), 20.9, 0.3)
-# --- Dawn: 32.2. The harmony opens to F major as the sun comes up ("Now there is.").
-place(music, noise_riser(1.0, 0.08, lo0=200, hi1=5000), 31.25)
-place(music, strings(F(41, 53, 57, 60, 65, 69), 4.0, amp=0.22, a=0.4, r=1.4, bright=8), 32.25)
-place(music, boom(2.4, 50, 30, 0.25), 32.25)
-place(music, pluck(midi(77), 3.0, 0.08), 32.7, 0.3)
-place(music, pluck(midi(81), 3.0, 0.06), 32.95, -0.3)
+# --- Dawn: 14.4. "TECTSOFT is here to help." The harmony opens to F major as the sun comes up.
+place(music, noise_riser(1.0, 0.08, lo0=200, hi1=5000), 13.45)
+place(music, strings(F(41, 53, 57, 60, 65, 69), 6.6, amp=0.2, a=0.4, r=1.6, bright=8), 14.45)
+place(music, boom(2.4, 50, 30, 0.22), 14.45)
+place(music, pluck(midi(77), 3.0, 0.08), 14.95, 0.3)
+place(music, pluck(midi(81), 3.0, 0.06), 17.0, -0.3)
 
-# --- The app: 35.8–71.8. Gentle 76 bpm piano arpeggios, F – C – Dm – Bb, a pad per bar.
+# --- The app and the practice: 21.0–59.4. Gentle 76 bpm piano arpeggios, F – C – Dm – Bb, a pad per bar.
 prog = [(41, [53, 57, 60, 65]), (36, [52, 55, 60, 64]), (38, [53, 57, 62, 65]), (34, [50, 53, 58, 62])]
-END = 71.8
-at = 35.8
+END = 59.4
+at = 21.0
 bar = 0
 while at < END - 1e-6:
     root, notes = prog[bar % 4]
@@ -239,15 +269,15 @@ while at < END - 1e-6:
         if t0 >= END:
             break
         place(music, pluck(midi(notes[ix] + 12), 1.6, 0.055 if e % 2 else 0.07), t0, -0.25 if e % 2 else 0.25)
-    if at >= 38.0:
+    if at >= 23.0:
         for b in range(4):
             place(music, tick(0.025), at + b * BEAT + BEAT / 2, 0.4)
     bar += 1
     at += 4 * BEAT
-# The city warms up (66.8–71.8): a slow swell into the end card.
-place(music, strings(F(53, 57, 60, 65, 72), 5.0, amp=0.1, a=3.2, r=0.4, bright=6), 66.8)
-# --- End: 71.8. Resolve on F major and let it ring.
-place(music, strings(F(29, 41, 53, 57, 60, 65, 69), 4.4, amp=0.24, a=0.3, r=2.2, bright=8), END)
+# TECTSOFT over the city (54.4–59.4): a slow swell into the end card.
+place(music, strings(F(53, 57, 60, 65, 72), 5.0, amp=0.1, a=3.2, r=0.4, bright=6), 54.4)
+# --- End: 59.4. Resolve on F major and let it ring.
+place(music, strings(F(29, 41, 53, 57, 60, 65, 69), 6.0, amp=0.24, a=0.3, r=3.0, bright=8), END)
 for k, m in enumerate([65, 69, 72, 77]):
     place(music, pluck(midi(m), 3.5, 0.07), END + 0.05 + k * 0.18, (-0.3, 0.3)[k % 2])
 
@@ -262,16 +292,25 @@ music *= duck
 music *= np.clip((DUR - t) / 2.5, 0, 1)
 
 sfx = np.zeros((2, N))
-for c in [8.4, 16.0, 20.0, 27.2, 32.2, 35.8, 41.0, 45.8, 51.0, 56.2, 59.4, 64.2, 71.8]:
-    place(sfx, whoosh(rng.uniform(0.7, 0.9), 0.16), c - 0.42, rng.uniform(-0.5, 0.5))
-place(sfx, buzz(0.5, 0.12), 20.9, 0.1)  # 4 a.m.: the phone goes off
-for at in [22.45, 24.3, 24.9, 25.5]:  # messages keep coming
-    place(sfx, tap(0.06), at, 0.1)
-for at in [38.75, 39.15, 39.75]:  # check-in sliders set
+for c in [8.4, 14.4, 21.0, 26.0, 30.8, 35.0, 40.0, 50.0, 59.4]:
+    place(sfx, glass_sweep(0.7, 0.08), c - 0.35, rng.uniform(-0.4, 0.4))
+for at in [6.93, 7.13]:  # barriers land
+    place(sfx, tom(0.5, 95, 52, 0.2), at, (-0.3, 0.3)[at > 7.0])
+for k, at in enumerate([8.95, 9.5, 10.05, 10.6, 11.15]):  # each problem lands on the card
+    place(sfx, tap(0.065), at, (-0.2, 0.25)[k % 2])
+for at in [23.6, 23.85, 24.1]:  # check-in sliders set
     place(sfx, tap(0.07), at, 0.2)
-for at in [51.75, 52.55]:  # alerts land
-    place(sfx, tap(0.07), at, -0.2)
-place(sfx, tap(0.09), 55.15, 0.2)  # crisis support tapped
+place(sfx, tap(0.07), 26.35, 0.25)  # the walk nudge drops in
+for at in [27.05, 27.4, 27.75, 28.1, 28.45]:  # habits ticked off
+    place(sfx, tap(0.07), at, 0.2)
+for at in [31.6, 31.82, 32.04]:  # resources arrive
+    place(sfx, tap(0.06), at, -0.2)
+for at in [40.6, 41.85, 43.1]:  # benefits
+    place(sfx, tap(0.06), at, -0.25)
+# End card: the website types itself in. Must match TYPE_AT / GAPS in compositions/endcard.html.
+TYPE_AT, GAPS = 59.4 + 1.9, [0.09, 0.07, 0.1, 0.08, 0.11, 0.07, 0.09, 0.13, 0.08, 0.07, 0.1, 0.08]
+for i in range(len(GAPS)):
+    place(sfx, key_click(0.12), TYPE_AT + sum(GAPS[:i]), 0.1)
 sfx = np.stack([reverb(sfx[0], 0.8, 0.15), reverb(sfx[1], 0.8, 0.15)])
 
 

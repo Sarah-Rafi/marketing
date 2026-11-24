@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Let's",
+    "start": 0.04,
+    "end": 0.27,
+    "id": "w0"
+  },
+  {
+    "text": "build",
+    "start": 0.27,
+    "end": 0.52,
+    "id": "w1"
+  },
+  {
+    "text": "a",
+    "start": 0.54,
+    "end": 0.59,
+    "id": "w2"
+  },
+  {
+    "text": "more",
+    "start": 0.59,
+    "end": 0.76,
+    "id": "w3"
+  },
+  {
+    "text": "connected",
+    "start": 0.82,
+    "end": 1.31,
+    "id": "w4"
+  },
+  {
+    "text": "care",
+    "start": 1.31,
+    "end": 1.56,
+    "id": "w5"
+  },
+  {
+    "text": "experience",
+    "start": 1.56,
+    "end": 2.18,
+    "id": "w6"
+  },
+  {
+    "text": "together.",
+    "start": 2.18,
+    "end": 2.68,
+    "id": "w7"
+  }
+]
